@@ -1,0 +1,14 @@
+#piano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.key {
+  background-color: white;
+  border: 1px solid black;
+  height: 150px;
+  width: 50px;
+  margin: 5px;
+}
