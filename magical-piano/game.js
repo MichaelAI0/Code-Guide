@@ -33,3 +33,35 @@ document.querySelectorAll(".key").forEach((key) => {
     console.log("key pressed", note);
   });
 });
+
+let mousedown = false;
+
+// This is the strum effect when you click and drag
+const pianoContainer = document.querySelector(".piano-container");
+pianoContainer.addEventListener("mousedown", (event) => {
+  mousedown = true;
+  const key = event.target.closest(".key");
+  if (key) {
+    playSound(key);
+  }
+});
+
+pianoContainer.addEventListener("mouseover", (event) => {
+  if (mousedown) {
+    const key = event.target.closest(".key");
+    if (key) {
+      playSound(key);
+    }
+  }
+});
+
+document.addEventListener("mouseup", () => {
+  mousedown = false;
+});
+
+function playSound(key) {
+  let note = key.id;
+  let audio = new Audio("assets/sounds/" + keyToSoundFile[note]);
+  audio.play();
+  console.log("key pressed", note);
+}

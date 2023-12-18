@@ -1,14 +1,70 @@
-#piano {
+body {
+  background: linear-gradient(
+    to bottom,
+    #008000,
+    #00ff00
+  ); /* gradient from dark green to light green */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
+}
+
+h1 {
+  color: #333;
+  font-size: 3em;
+  margin-top: 20px;
+}
+/* basic brown colored piano */
+/* .piano-container {
+  background-color: #654321; 
+  border: 2px solid #000; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px; 
+  max-width: 800px; 
+  margin: 0 auto; 
+} */
+
+.piano-container {
+  background: linear-gradient(to bottom, #8b4513, #5a3517);
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#piano {
+  position: relative;
+  width: 720px;
+  height: 120px;
+  margin: 0 auto;
 }
 
 .key {
-  background-color: white;
-  border: 1px solid black;
-  height: 150px;
-  width: 50px;
-  margin: 5px;
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 120px;
+  margin-right: 2px;
+  background: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+.key.black {
+  background-color: black;
+  height: 80px;
+  width: 20px;
+  z-index: 1;
+  color: white;
 }
