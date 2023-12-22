@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#game-board div {
+  height: 100px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
