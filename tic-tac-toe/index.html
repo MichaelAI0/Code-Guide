@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="game.js" defer></script>
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
@@ -8,9 +9,15 @@
     <header>
       <h1>Tic Tac Toe</h1>
     </header>
+    <div class="switch">
+      <label class="switch">
+        <input type="checkbox" id="togBtn" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+    <p id="mode">Two Player Mode</p>
     <div id="game-board">
       <!-- Game board will be generated here -->
     </div>
-    <script src="game.js"></script>
   </body>
 </html>
