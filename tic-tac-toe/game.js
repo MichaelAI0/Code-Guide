@@ -18,7 +18,9 @@ for (let i = 0; i < 9; i++) {
 function handleCellClick(event) {
   event.target.textContent = currentPlayer;
   currentPlayer = currentPlayer === "X" ? "O" : "X";
-  if (!isTwoPlayer && currentPlayer === "O") {
+  if (checkWin()) {
+    resetGame();
+  } else if (!isTwoPlayer && currentPlayer === "O") {
     makeAIMove();
   }
 }
@@ -32,5 +34,42 @@ function makeAIMove() {
       availableCells[Math.floor(Math.random() * availableCells.length)];
     randomCell.textContent = "O";
     currentPlayer = "X";
+    if (checkWin()) {
+      resetGame();
+    }
   }
+}
+
+function resetGame() {
+  currentPlayer = "X";
+  for (let cell of gameBoard.children) {
+    cell.textContent = "";
+    cell.addEventListener("click", handleCellClick, { once: true });
+  }
+}
+
+function checkWin() {
+  const winningCombinations = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+
+  const cells = Array.from(gameBoard.children);
+  for (let combination of winningCombinations) {
+    if (
+      cells[combination[0]].textContent &&
+      cells[combination[0]].textContent === cells[combination[1]].textContent &&
+      cells[combination[1]].textContent === cells[combination[2]].textContent
+    ) {
+      return true;
+    }
+  }
+
+  return false;
 }
