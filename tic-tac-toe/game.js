@@ -8,7 +8,6 @@ document.getElementById("togBtn").addEventListener("change", function (event) {
   modeText.textContent = isTwoPlayer ? "Two Player Mode" : "One Player Mode";
 });
 
-// Create game board
 for (let i = 0; i < 9; i++) {
   const cell = document.createElement("div");
   cell.addEventListener("click", handleCellClick, { once: true });
