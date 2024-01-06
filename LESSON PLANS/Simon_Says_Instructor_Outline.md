@@ -100,4 +100,4 @@
 
 - Consider follow-up sessions to review homework and showcase projects.
 
-** This summary outline helps the instructor keep the lesson organized and on track, ensuring that each topic is covered and that there's a balance between instruction, hands-on practice, and engagement with the students.**
+**This summary outline helps the instructor keep the lesson organized and on track, ensuring that each topic is covered and that there's a balance between instruction, hands-on practice, and engagement with the students.**
