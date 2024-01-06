@@ -12,27 +12,27 @@
 
 ### Objective:
 
-By the end of this lesson, students will be able to:
+- By the end of this lesson, students will be able to:
 
-1. Understand the basic structure of an HTML document.
+  - Understand the basic structure of an HTML document.
 
-1. Use CSS to style HTML elements.
+  - Use CSS to style HTML elements.
 
-1. Create an interactive game using JavaScript and jQuery.
+  - Create an interactive game using JavaScript and jQuery.
 
-1. Learn about event handling and user interaction.
+  - Learn about event handling and user interaction.
 
-1. Develop problem-solving skills by debugging and fixing issues in code.
+  - Develop problem-solving skills by debugging and fixing issues in code.
 
-### Lesson Outline:
+## Lesson Outline:
 
-- Introduction (15 minutes)
+### Introduction (15 minutes)
 
-  - Explain the purpose of the lesson: creating a Simon Says game.
+- Explain the purpose of the lesson: creating a Simon Says game.
 
-  - Show a brief demo of the final game to engage students' interest.
+- Show a brief demo of the final game to engage students' interest.
 
-  - Discuss the importance of HTML, CSS, and JavaScript in web development.
+- Discuss the importance of HTML, CSS, and JavaScript in web development.
 
 - HTML and CSS Setup (30 minutes)
 
@@ -48,17 +48,17 @@ By the end of this lesson, students will be able to:
 
   - Q2: Can you name some CSS properties you can use to style elements?
 
-- JavaScript Basics (45 minutes)
+### JavaScript Basics (45 minutes)
 
-  - Introduce JavaScript and its role in making the game interactive.
+- Introduce JavaScript and its role in making the game interactive.
 
-  - Explain the purpose of variables, arrays, and functions in the code.
+- Explain the purpose of variables, arrays, and functions in the code.
 
-  - Discuss the importance of event listeners for user interaction.
+- Discuss the importance of event listeners for user interaction.
 
-  - Demonstrate how to use setTimeout for animations.
+- Demonstrate how to use setTimeout for animations.
 
-  - Q3: What is an event listener, and why is it essential for interactive web applications?
+- Q3: What is an event listener, and why is it essential for interactive web applications?
 
 - Game Logic (60 minutes)
 
@@ -84,15 +84,15 @@ By the end of this lesson, students will be able to:
 
   - Q4: Can you describe the high-level steps involved in the game's logic?
 
-5. Debugging and Testing (30 minutes)
+### Debugging and Testing (30 minutes)
 
-Emphasize the importance of testing and debugging code.
+- Emphasize the importance of testing and debugging code.
 
-Show common debugging techniques and tools.
+- Show common debugging techniques and tools.
 
-Ask students to identify and fix any issues in their code.
+- Ask students to identify and fix any issues in their code.
 
-Q5: How can you debug JavaScript code?
+- Q5: How can you debug JavaScript code?
 
 6. Final Touches and Customization (15 minutes)
 
