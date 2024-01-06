@@ -52,4 +52,5 @@ In this walkthrough, we will explore the HTML code (`index.html`) that defines t
 - `<div class="container">`: A container for the game buttons organized in rows.
 - `<div type="button" id="green" class="btn green"></div>`: Represents a game button with an id and specific class for styling.
   -Similar buttons for red, yellow, and blue colors follow the same pattern.
+
   **This HTML code forms the structure of the Simon Says game, defining the layout and elements that players interact with.**
