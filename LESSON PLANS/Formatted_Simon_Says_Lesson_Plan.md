@@ -26,27 +26,27 @@ By the end of this lesson, students will be able to:
 
 ### Lesson Outline:
 
-1. Introduction (15 minutes)
+- Introduction (15 minutes)
 
-- Explain the purpose of the lesson: creating a Simon Says game.
+  - Explain the purpose of the lesson: creating a Simon Says game.
 
-- Show a brief demo of the final game to engage students' interest.
+  - Show a brief demo of the final game to engage students' interest.
 
-- Discuss the importance of HTML, CSS, and JavaScript in web development.
+  - Discuss the importance of HTML, CSS, and JavaScript in web development.
 
-2. HTML and CSS Setup (30 minutes)
+- HTML and CSS Setup (30 minutes)
 
-- Review the provided HTML and CSS code.
+  - Review the provided HTML and CSS code.
 
-- Explain the structure of an HTML document (DOCTYPE, head, body, tags).
+  - Explain the structure of an HTML document (DOCTYPE, head, body, tags).
 
-- Discuss the purpose of CSS for styling the game elements.
+  - Discuss the purpose of CSS for styling the game elements.
 
-- Encourage students to modify CSS properties to customize the game's appearance.
+  - Encourage students to modify CSS properties to customize the game's appearance.
 
-- Q1: What is the role of CSS in web development?
+  - Q1: What is the role of CSS in web development?
 
-- Q2: Can you name some CSS properties you can use to style elements?
+  - Q2: Can you name some CSS properties you can use to style elements?
 
 3. JavaScript Basics (45 minutes)
 
