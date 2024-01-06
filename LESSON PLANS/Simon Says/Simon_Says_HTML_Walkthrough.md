@@ -39,7 +39,8 @@ In this walkthrough, we will explore the HTML code (`index.html`) that defines t
 
 ### HTML Elements
 
-- <!DOCTYPE html>: Defines the document type and version.
+ <!DOCTYPE html>: Defines the document type and version.
+
 - <head>: Contains metadata and external resource links.
 - <meta charset="utf-8">: Specifies the character encoding.
 - <title>: Sets the page title.
