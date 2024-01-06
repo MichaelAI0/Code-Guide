@@ -143,18 +143,52 @@ if (selectedDifficulty === "easy") {
         <!-- High scores will be displayed here dynamically -->
     </table>
 </div>
-
 ```
 
 This code adds a container for the high scores with an `<h2>` heading, a `<table>` element to display the scores, and table headers for "Player" and "Score." The scores will be populated dynamically using JavaScript.
 
-### Javascript
+### CSS:
+
+1. Add styles to the CSS file to format the high scores container and table.
+
+```CSS
+/* Styles for the high scores container */
+#high-scores-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for the high scores table */
+#high-scores {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styles for table headers and cells */
+#high-scores th,
+#high-scores td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* Styles for table headers */
+#high-scores th {
+    background-color: #333;
+    color: white;
+}
+```
+
+These CSS styles define the appearance of the high scores container, table, headers, and rows.
+
+### Javascript:
 
 1. Initialize an array to store high scores at the beginning of your JavaScript file.
 
 ```javascript
 var highScores = []; // Initialize an empty array to store high scores
 ```
+
+- This code initializes an empty array to store high scores.
 
 2. Create a function to update and display high scores.
 
@@ -170,10 +204,15 @@ function updateHighScores() {
 
   // Display high scores in the table
   for (var i = 0; i < highScores.length; i++) {
-    $("#high-scores").append("<tr><td>" + highScores[i].player + "</td><td>" + highScores[i].score + "</td></tr>");
+    // Create a new row for each high score
+    var newRow = "<tr><td>" + highScores[i].player + "</td><td>" + highScores[i].score + "</td></tr>";
+    // Append the new row to the high scores table
+    $("#high-scores").append(newRow);
   }
 }
 ```
+
+- This function sorts the high scores in descending order, clears the high score table (except for the headers), and dynamically displays the high scores.
 
 3. Call the `updateHighScores` function after each game to update and display high scores.
 
@@ -184,6 +223,20 @@ function updateHighScore(playerName, score) {
   updateHighScores(); // Update and display the high scores
 }
 ```
+
+- This code adds the player's score to the highScores array and then calls the updateHighScores function to update and display the high scores.
+
+4. Explanation of the for loop:
+
+The `for` loop inside the `updateHighScores` function iterates through the sorted `highScores` array. Here's how it works:
+
+- `for (var i = 0; i < highScores.length; i++)`: This loop initializes a variable i to 0 and continues as long as i is less than the length of the highScores array.
+
+- `var newRow = "<tr><td>" + highScores[i].player + "</td><td>" + highScores[i].score + "</td></tr>";`: Inside the loop, a new HTML table row (`<tr>`) is created for each high score. It contains two table data cells (`<td>`) with the player's name and score.
+
+- `$("#high-scores").append(newRow);`: The newly created row (newRow) is appended to the high scores table with the id "high-scores."
+
+This loop dynamically generates rows in the high scores table, displaying player names and scores from the sorted `highScores` array.
 
 ## Feature 4: Customizable Sound Effects
 
