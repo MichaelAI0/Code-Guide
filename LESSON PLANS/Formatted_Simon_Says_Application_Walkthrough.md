@@ -48,54 +48,54 @@
 
 ### Step 4: JavaScript Logic
 
-4.1. Open game.js in your code editor.
+- 4.1. Open game.js in your code editor.
 
-4.2. Define and initialize variables for the game, such as buttonColours, gamePattern, userClickedPattern, started, and level.
+- 4.2. Define and initialize variables for the game, such as buttonColours, gamePattern, userClickedPattern, started, and level.
 
-4.3. Create a function, nextSequence(), to generate a random color pattern for Simon and display it to the user. Use Math.random() and jQuery animations for this.
+- 4.3. Create a function, nextSequence(), to generate a random color pattern for Simon and display it to the user. Use Math.random() and jQuery animations for this.
 
-4.4. Implement event listeners to handle user input when buttons are clicked. When a button is clicked, play the corresponding sound and add the color to the userClickedPattern array.
+- 4.4. Implement event listeners to handle user input when buttons are clicked. When a button is clicked, play the corresponding sound and add the color to the userClickedPattern array.
 
-4.5. Create a function, checkAnswer(currentLevel), to compare the user's pattern to Simon's pattern. Check if the user got the sequence right and proceed to the next level if they did. If the user makes a mistake, trigger the game over scenario.
+- 4.5. Create a function, checkAnswer(currentLevel), to compare the user's pattern to Simon's pattern. Check if the user got the sequence right and proceed to the next level if they did. If the user makes a mistake, trigger the game over scenario.
 
-4.6. Implement functions for playing sounds, animating button presses, and restarting the game.
+- 4.6. Implement functions for playing sounds, animating button presses, and restarting the game.
 
-4.7. Add a keypress event listener to start the game when a key is pressed.
+- 4.7. Add a keypress event listener to start the game when a key is pressed.
 
-Step 5: Debugging and Testing
+### Step 5: Debugging and Testing
 
-5.1. Use console.log() statements strategically to debug your code. Print important variables and values to the console to identify issues.
+- 5.1. Use console.log() statements strategically to debug your code. Print important variables and values to the console to identify issues.
 
-5.2. Test the game at various stages of development. Verify that button clicks, animations, and sounds work as expected.
+- 5.2. Test the game at various stages of development. Verify that button clicks, animations, and sounds work as expected.
 
-Step 6: Customization (Optional)
+### Step 6: Customization (Optional)
 
-6.1. Allow customization of game elements such as colors, fonts, and sounds by modifying the CSS and adding more sound files to the "sounds" folder.
+- 6.1. Allow customization of game elements such as colors, fonts, and sounds by modifying the CSS and adding more sound files to the "sounds" folder.
 
-Step 7: Final Touches and Optimization
+### Step 7: Final Touches and Optimization
 
-7.1. Optimize the game for performance, ensuring smooth animations and responsiveness on different devices.
+- 7.1. Optimize the game for performance, ensuring smooth animations and responsiveness on different devices.
 
-7.2. Add any final touches, such as transitions between levels or feedback for the player.
+- 7.2. Add any final touches, such as transitions between levels or feedback for the player.
 
-Step 8: Conclusion and Next Steps
+### Step 8: Conclusion and Next Steps
 
-8.1. Recap what you've accomplished in the project.
+- 8.1. Recap what you've accomplished in the project.
 
-8.2. Encourage further exploration of web development, JavaScript, and game development.
+- 8.2. Encourage further exploration of web development, JavaScript, and game development.
 
-Step 9: Homework Assignment (Optional)
+### Step 9: Homework Assignment (Optional)
 
-9.1. Assign additional features or challenges to students for further practice and creativity.
+- 9.1. Assign additional features or challenges to students for further practice and creativity.
 
-Step 10: Assessment (Optional)
+### Step 10: Assessment (Optional)
 
-10.1. Assess students' understanding of the project through a review of their customized games or a quiz.
+- 10.1. Assess students' understanding of the project through a review of their customized games or a quiz.
 
-Step 11: Q&A and Assistance (Ongoing)
+### Step 11: Q&A and Assistance (Ongoing)
 
-11.1. Be available to answer students' questions and provide assistance as they work on their projects.
+- 11.1. Be available to answer students' questions and provide assistance as they work on their projects.
 
-Step 12: Follow-up Sessions (Optional)
+### Step 12: Follow-up Sessions (Optional)
 
-12.1. Consider scheduling follow-up sessions to review homework assignments, address challenges, and showcase students' projects.
+- 12.1. Consider scheduling follow-up sessions to review homework assignments, address challenges, and showcase students' projects.
