@@ -66,9 +66,9 @@
 
 ### User Input Handling:
 
-- When a user clicks on a button, its color is recorded in userClickedPattern.
+- When a user clicks on a button, its color is recorded in `userClickedPattern`.
 
-- The game checks the user's input against the correct sequence using the checkAnswer(currentLevel) function.
+- The game checks the user's input against the correct sequence using the `checkAnswer(currentLevel)` function.
 
 ### Checking Answers (checkAnswer):
 
