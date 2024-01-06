@@ -126,7 +126,27 @@ if (selectedDifficulty === "easy") {
 
 ## Feature 3: High Score System
 
-**This code provides a step-by-step implementation for adding the High Score System feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+**This code provides a step-by-step implementation for adding the "High Score System" feature to your Simon Says game, including the necessary HTML, CSS, and JavaScript code, with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+
+### HTML:
+
+1. Add an element where you want to display the high scores. Place this element inside the `<body>` of your HTML file, typically below your game elements.
+
+```HTML
+<div id="high-scores-container">
+    <h2>High Scores</h2>
+    <table id="high-scores">
+        <tr>
+            <th>Player</th>
+            <th>Score</th>
+        </tr>
+        <!-- High scores will be displayed here dynamically -->
+    </table>
+</div>
+
+```
+
+This code adds a container for the high scores with an `<h2>` heading, a `<table>` element to display the scores, and table headers for "Player" and "Score." The scores will be populated dynamically using JavaScript.
 
 ### Javascript
 
@@ -145,8 +165,8 @@ function updateHighScores() {
     return b.score - a.score;
   });
 
-  // Clear the high score table
-  $("#high-scores").empty();
+  // Clear the high score table (except for the table headers)
+  $("#high-scores tr:not(:first)").remove();
 
   // Display high scores in the table
   for (var i = 0; i < highScores.length; i++) {
@@ -164,8 +184,6 @@ function updateHighScore(playerName, score) {
   updateHighScores(); // Update and display the high scores
 }
 ```
-
-4. You should call the updateHighScore function after each game to update the high scores.
 
 ## Feature 4: Customizable Sound Effects
 
