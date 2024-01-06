@@ -16,7 +16,7 @@
 
 - The main content of the game is placed within the <body> element.
 
-### JavaScript and jQuery Script Tags:
+### JavaScript Script Tag:
 
 - Script tags are included at the end of the <body>:
 
