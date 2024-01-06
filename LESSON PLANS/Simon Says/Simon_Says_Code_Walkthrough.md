@@ -6,21 +6,21 @@
 
 ### HTML Structure:
 
-- The <!DOCTYPE html> declaration defines the document type and version.
+- The `<!DOCTYPE html>` declaration defines the document type and version.
 
-- Inside the <head> section, the character encoding is specified with <meta charset="UTF-8">.
+- Inside the `<head>` section, the character encoding is specified with `<meta charset="UTF-8">`.
 
-- The page title is set using <title>Simon Says</title>.
+- The page title is set using `<title>Simon Says</title>`.
 
-- The CSS stylesheet is linked with <link rel="stylesheet" href="styles.css">.
+- The CSS stylesheet is linked with `<link rel="stylesheet" href="styles.css">`.
 
-- The main content of the game is placed within the <body> element.
+- The main content of the game is placed within the `<body>` element.
 
 ### JavaScript Script Tag:
 
-- Script tags are included at the end of the <body>:
+- Script tags are included at the end of the `<body>`:
 
-  - <script src="game.js" defer></script>: This script tag links to the game's JavaScript file (game.js) and specifies the defer attribute to ensure that the script is executed after the HTML content is parsed.
+  - `<script src="game.js" defer></script>`: This script tag links to the game's JavaScript file (game.js) and specifies the defer attribute to ensure that the script is executed after the HTML content is parsed.
 
 ### CSS (styles.css):
 
@@ -56,9 +56,9 @@
 
 - The code sets up two event listeners:
 
-  - $(document).keypress(): Listens for a keypress to start the game when any key is pressed.
+  - `$(document).keypress()`: Listens for a keypress to start the game when any key is pressed.
 
-  - $(".btn").click(): Listens for clicks on game buttons to record user input and trigger actions.
+  - `$(".btn").click()`: Listens for clicks on game buttons to record user input and trigger actions.
 
 ### Game Initialization (nextSequence):
 
