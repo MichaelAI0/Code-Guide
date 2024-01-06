@@ -48,41 +48,41 @@ By the end of this lesson, students will be able to:
 
   - Q2: Can you name some CSS properties you can use to style elements?
 
-3. JavaScript Basics (45 minutes)
+- JavaScript Basics (45 minutes)
 
-Introduce JavaScript and its role in making the game interactive.
+  - Introduce JavaScript and its role in making the game interactive.
 
-Explain the purpose of variables, arrays, and functions in the code.
+  - Explain the purpose of variables, arrays, and functions in the code.
 
-Discuss the importance of event listeners for user interaction.
+  - Discuss the importance of event listeners for user interaction.
 
-Demonstrate how to use setTimeout for animations.
+  - Demonstrate how to use setTimeout for animations.
 
-Q3: What is an event listener, and why is it essential for interactive web applications?
+  - Q3: What is an event listener, and why is it essential for interactive web applications?
 
-4. Game Logic (60 minutes)
+- Game Logic (60 minutes)
 
-Break down the game logic step by step:
+  - Break down the game logic step by step:
 
-Initialize game variables and arrays.
+    - Initialize game variables and arrays.
 
-Start the game when a key is pressed.
+    - Start the game when a key is pressed.
 
-Generate a random sequence of colors for Simon.
+    - Generate a random sequence of colors for Simon.
 
-Display the sequence to the user with animations and sounds.
+    - Display the sequence to the user with animations and sounds.
 
-Allow the user to click on buttons and record their sequence.
+    - Allow the user to click on buttons and record their sequence.
 
-Check if the user's sequence matches Simon's.
+    - Check if the user's sequence matches Simon's.
 
-Update the game level and repeat.
+    - Update the game level and repeat.
 
-Handle game over scenarios.
+    - Handle game over scenarios.
 
-Encourage students to follow along and test their code as they go.
+  - Encourage students to follow along and test their code as they go.
 
-Q4: Can you describe the high-level steps involved in the game's logic?
+  - Q4: Can you describe the high-level steps involved in the game's logic?
 
 5. Debugging and Testing (30 minutes)
 
