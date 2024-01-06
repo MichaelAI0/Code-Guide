@@ -8,8 +8,6 @@ In this guide, you'll learn how to add exciting new features to your Simon Says 
 
 1. Add a timer element inside the `<body>` of your HTML file.
 
-**html**
-
 `<div id="timer">10</div>`
 
 ### JavaScript:
@@ -125,3 +123,46 @@ if (selectedDifficulty === "easy") {
 ```
 
 **This code provides a step-by-step implementation for adding the Difficulty Levels feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+
+## Feature 3: High Score System
+
+### Javascript
+
+1. Initialize an array to store high scores at the beginning of your JavaScript file.
+
+```javascript
+var highScores = []; // Initialize an empty array to store high scores
+```
+
+2. Create a function to update and display high scores.
+
+```javascript
+function updateHighScores() {
+  // Sort high scores in descending order
+  highScores.sort(function (a, b) {
+    return b.score - a.score;
+  });
+
+  // Clear the high score table
+  $("#high-scores").empty();
+
+  // Display high scores in the table
+  for (var i = 0; i < highScores.length; i++) {
+    $("#high-scores").append("<tr><td>" + highScores[i].player + "</td><td>" + highScores[i].score + "</td></tr>");
+  }
+}
+```
+
+3. Call the `updateHighScores` function after each game to update and display high scores.
+
+```javascript
+// Example: Update high scores after a game (call this function at the appropriate place in your code)
+function updateHighScore(playerName, score) {
+  highScores.push({ player: playerName, score: score }); // Add the player's score to the highScores array
+  updateHighScores(); // Update and display the high scores
+}
+```
+
+4. You should call the updateHighScore function after each game to update the high scores.
+
+**This code provides a step-by-step implementation for adding the High Score System feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
