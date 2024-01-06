@@ -4,6 +4,8 @@ In this guide, you'll learn how to add exciting new features to your Simon Says 
 
 ## Feature 1: Countdown Timer
 
+**This code provides a step-by-step implementation for adding the Countdown Timer feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+
 ### HTML:
 
 1. Add a timer element inside the `<body>` of your HTML file.
@@ -70,9 +72,9 @@ $(document).keypress(function () {
 });
 ```
 
-**This code provides a step-by-step implementation for adding the Countdown Timer feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
-
 ## Feature 2: Difficulty Levels
+
+**This code provides a step-by-step implementation for adding the Difficulty Levels feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
 
 ### HTML:
 
@@ -122,9 +124,9 @@ if (selectedDifficulty === "easy") {
 }
 ```
 
-**This code provides a step-by-step implementation for adding the Difficulty Levels feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
-
 ## Feature 3: High Score System
+
+**This code provides a step-by-step implementation for adding the High Score System feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
 
 ### Javascript
 
@@ -165,4 +167,107 @@ function updateHighScore(playerName, score) {
 
 4. You should call the updateHighScore function after each game to update the high scores.
 
-**This code provides a step-by-step implementation for adding the High Score System feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+## Feature 4: Customizable Sound Effects
+
+**This code provides a step-by-step implementation for adding the Customizable Sound Effects feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+
+### HTML:
+
+1. Add a sound selection menu inside the `<body>` of your HTML file.
+
+```HTML
+<select id="sound">
+    <option value="sound1">Sound 1</option>
+    <option value="sound2">Sound 2</option>
+    <option value="sound3">Sound 3</option>
+</select>
+
+```
+
+### Javascript
+
+1. Initialize a variable to store the selected sound effect.
+
+```javascript
+var selectedSound = "sound1"; // Default to "sound1"
+```
+
+2. Add an event listener to update the selected sound effect when it changes.
+
+```javascript
+$("#sound").change(function () {
+  selectedSound = $(this).val(); // Update the selected sound effect based on user's choice
+});
+```
+
+3. Modify your button click event listener to load and play the selected sound effect.
+
+```javascript
+$(".btn").click(function () {
+  var audio = new Audio("sounds/" + selectedSound + ".mp3"); // Create an Audio object with the selected sound
+  audio.play(); // Play the selected sound
+  // ... (existing code)
+});
+```
+
+## Feature 5: Pause and Resume
+
+**This code provides a step-by-step implementation for adding the "Pause and Resume" feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
+
+### HTML:
+
+1. Add "Pause" and "Resume" buttons inside the <body> of your HTML file.
+
+```HTML
+<button id="pause-button">Pause</button>
+<button id="resume-button">Resume</button>
+
+```
+
+### Javascript
+
+1. Add event listeners for the "Pause" and "Resume" buttons.
+
+```javascript
+// Add event listener for the "Pause" button
+$("#pause-button").click(function () {
+  // Implement pause logic here (e.g., pause timers and animations)
+});
+
+// Add event listener for the "Resume" button
+$("#resume-button").click(function () {
+  // Implement resume logic here (e.g., resume timers and animations)
+});
+```
+
+2. Implement the pause and resume logic inside the event listeners as needed for your game. You should pause any timers, animations, or gameplay when the "Pause" button is clicked and resume them when the "Resume" button is clicked.
+
+```javascript
+// Example: Implement pause and resume logic for timers
+var timerPaused = false; // Initialize a variable to track if the timer is paused
+
+$("#pause-button").click(function () {
+  if (!timerPaused) {
+    clearInterval(timerInterval); // Pause the timer interval
+    timerPaused = true;
+  }
+});
+
+$("#resume-button").click(function () {
+  if (timerPaused) {
+    timerInterval = setInterval(function () {
+      countdown--;
+      updateTimer();
+
+      if (countdown === 0) {
+        clearInterval(timerInterval);
+        $("#level-title").html("<b>Game Over</b><br><br> Press Any Key to Restart");
+        playSound("wrong");
+        $("body").addClass("game-over");
+        startOver();
+      }
+    }, 1000);
+    timerPaused = false; // Resume the timer
+  }
+});
+```
