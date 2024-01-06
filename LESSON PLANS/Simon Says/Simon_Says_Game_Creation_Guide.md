@@ -287,6 +287,23 @@ function startOver() {
 - JavaScript code controls the game's logic, including generating sequences, handling user input, playing sounds, and checking the user's answers.
 - Line comments (e.g., **// Array of button colors**) provide explanations for each section of the code.
 
+- `$(document).keypress(function () { ... })`
+  - Purpose: This function is an event listener that triggers when a key is pressed on the keyboard. It initiates the game when the user presses any key.
+- `nextSequence()`
+  - Purpose: This function generates the next sequence of button colors in the game. It increases the level, updates the game title, selects a random color, and adds it to the game pattern.
+- `playSound(name)`
+  - Purpose: This function plays a sound when called. It takes the name of a sound file as a parameter and plays the corresponding sound.
+- `animatePress(currentColor)`
+  - Purpose: This function creates a visual effect for a button press. It temporarily adds a "pressed" class to the button, making it appear as if it's being pressed down.
+- `$(".btn").click(function () { ... })`
+  - Purpose: This function is an event listener for button clicks. It triggers when a game button is clicked by the user. It captures the user's input and checks if it matches the game's pattern.
+- `checkAnswer(currentLevel)`
+  - Purpose: This function checks if the user's input matches the game's pattern up to the current level. It's responsible for determining whether the user has successfully completed the current sequence or made a mistake.
+- `startOver()`
+  - Purpose: This function resets the game to its initial state. It sets the level back to 0, clears the game pattern, and allows the game to be restarted.
+
+**These explanations provide a detailed understanding of each function's role and purpose in the game's logic.**
+
 ## Step 5: Adding Game Sounds
 
 1. Inside the "SimonSaysGame" folder, create a new folder named "sounds."
