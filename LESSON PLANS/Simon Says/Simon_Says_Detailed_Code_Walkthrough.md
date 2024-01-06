@@ -40,3 +40,11 @@
 - `<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />`: Imports a Google Font named "Press Start 2P" for the title.
 - `<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>`: Loads the jQuery library (a JavaScript library) with the defer attribute, which means it will load asynchronously.
 - `<script src="./game.js" defer></script>`: Links to a JavaScript file (game.js) for game logic with the defer attribute for asynchronous loading.
+
+### Body Content
+
+- `<h1 id="level-title">Press A Key to Start</h1>`: Displays the game's title with the ID "level-title."
+- `<div class="container">`: A container for organizing game buttons.
+- `<div class="row">`: Represents a row of game buttons.
+- `<div type="button" id="green" class="btn green"></div>`: A button with a green color and an ID of "green." It's styled using CSS classes.
+- Similar button divs for red, yellow, and blue colors follow the same pattern.
