@@ -67,7 +67,7 @@ body {
 ```
 
 - The CSS code provides styling for various game elements such as the background, title, buttons, and game-over message.
-- Classes like .btn, .game-over, and others are used to select and style specific elements in the HTML.
+- Classes like `.btn`, `.game-over`, and others are used to select and style specific elements in the HTML.
 - The styles include custom fonts, colors, margins, padding, and border properties.
 
 **This CSS code is responsible for creating the visual design and layout of the Simon Says game, making it visually appealing and engaging for players.**
