@@ -106,7 +106,7 @@ function checkAnswer(currentLevel) {
 }
 ```
 
-- checkAnswer compares the user's input to Simon's sequence.
+- `checkAnswer` compares the user's input to Simon's sequence.
 - If correct, it proceeds to the next level; if the user completes the sequence, "SUCCESS!!" is displayed.
 - If incorrect, it triggers a game over scenario, plays a sound, adds a game-over class to the body, and prompts for a restart.
 
