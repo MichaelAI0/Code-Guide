@@ -41,15 +41,15 @@ In this walkthrough, we will explore the HTML code (`index.html`) that defines t
 
 - `<!DOCTYPE html>`: Defines the document type and version.
 
-- `<head>``: Contains metadata and external resource links.
-- `<meta charset="utf-8">``: Specifies the character encoding.
-- `<title>``: Sets the page title.
-- `<link rel="stylesheet" href="styles.css">``: Links the external CSS stylesheet.
-- `<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">``: Imports a Google Font for the game's title.
-- `<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>``: Loads the jQuery library asynchronously.
-- `<script src="./game.js" defer></script>``: Links to the game's JavaScript file (game.js) and specifies the defer attribute to ensure script execution after HTML parsing.
-- `<h1 id="level-title">Press A Key to Start</h1>``: Displays the game's title.
-- `<div class="container">``: A container for the game buttons organized in rows.
-- `<div type="button" id="green" class="btn green"></div>``: Represents a game button with an id and specific class for styling.
+- `<head>`: Contains metadata and external resource links.
+- `<meta charset="utf-8">`: Specifies the character encoding.
+- `<title>`: Sets the page title.
+- `<link rel="stylesheet" href="styles.css">`: Links the external CSS stylesheet.
+- `<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">`: Imports a Google Font for the game's title.
+- `<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>`: Loads the jQuery library asynchronously.
+- `<script src="./game.js" defer></script>`: Links to the game's JavaScript file (game.js) and specifies the defer attribute to ensure script execution after HTML parsing.
+- `<h1 id="level-title">Press A Key to Start</h1>`: Displays the game's title.
+- `<div class="container">`: A container for the game buttons organized in rows.
+- `<div type="button" id="green" class="btn green"></div>`: Represents a game button with an id and specific class for styling.
   -Similar buttons for red, yellow, and blue colors follow the same pattern.
   **This HTML code forms the structure of the Simon Says game, defining the layout and elements that players interact with.**
