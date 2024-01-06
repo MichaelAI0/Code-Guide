@@ -56,3 +56,64 @@ $(".btn").click(function () {
   }
 });
 ```
+
+- The first event listener waits for a keypress to start the game and initializes it.
+- The second event listener handles button clicks, records user input, plays sounds, and checks answers.
+
+### Game Initialization (nextSequence)
+
+```javascript
+function nextSequence() {
+  userClickedPattern = [];
+  level++;
+  $("#level-title").text("Level " + level);
+  var randomNumber = Math.floor(Math.random() * 4);
+  var randomChosenColour = buttonColours[randomNumber];
+  gamePattern.push(randomChosenColour);
+
+  for (let i = 0; i < gamePattern.length; i++) {
+    setTimeout(function () {
+      $("#" + gamePattern[i])
+        .fadeOut(100)
+        .fadeIn(100);
+    }, 500 * i);
+  }
+}
+```
+
+- nextSequence generates a random color and adds it to gamePattern.
+- It updates the game level and displays the current level on the screen.
+- The sequence is animated with button fades to show the player.
+
+### Checking Answers (checkAnswer)
+
+```javascript
+function checkAnswer(currentLevel) {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    if (userClickedPattern.length === gamePattern.length) {
+      setTimeout(function () {
+        nextSequence();
+      }, 1000);
+      $("#level-title").text("SUCCESS!!");
+    }
+  } else {
+    playSound("wrong");
+    $("body").addClass("game-over");
+    $("#level-title").html("<b>Game Over</b><br><br> Press Any Key to Restart");
+
+    startOver();
+  }
+}
+```
+
+- checkAnswer compares the user's input to Simon's sequence.
+- If correct, it proceeds to the next level; if the user completes the sequence, "SUCCESS!!" is displayed.
+- If incorrect, it triggers a game over scenario, plays a sound, adds a game-over class to the body, and prompts for a restart.
+
+### Additional Functions
+
+- playSound(name): Plays the sound associated with a color or "wrong."
+- animatePress(currentColor): Adds a visual effect when a button is clicked.
+- startOver(): Resets the game variables to start a new game.
+
+  **This JavaScript code powers the Simon Says game, handling user interactions, game logic, animations, and more, providing an interactive and engaging gaming experience.**
