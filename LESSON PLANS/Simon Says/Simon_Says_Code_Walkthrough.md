@@ -42,15 +42,15 @@
 
 - Several variables are declared at the beginning of the file, including:
 
-- buttonColours: An array that holds the colors used in the game.
+  - `buttonColours`: An array that holds the colors used in the game.
 
-- gamePattern: An array that stores the randomly generated sequence by Simon.
+  - `gamePattern`: An array that stores the randomly generated sequence by Simon.
 
-- userClickedPattern: An array that records the user's input.
+  - `userClickedPattern`: An array that records the user's input.
 
-- started: A boolean variable to track whether the game has started.
+  - `started`: A boolean variable to track whether the game has started.
 
-- level: An integer to keep track of the current level.
+  - `level`: An integer to keep track of the current level.
 
 ### Event Listeners:
 
