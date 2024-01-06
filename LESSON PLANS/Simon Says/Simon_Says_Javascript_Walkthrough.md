@@ -29,28 +29,30 @@ var level = 0;
 
 ## Event Listeners
 
+```javascript
 // Event listener for a keypress to start the game
 $(document).keypress(function () {
-if (!started) {
-$("#level-title").text("Level " + level);
-nextSequence();
-started = true;
-$("body").removeClass("game-over");
-}
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+    $("body").removeClass("game-over");
+  }
 });
 
 // Event listener for button clicks
 $(".btn").click(function () {
-if (started) {
-var userChosenColour = $(this).attr("id");
-userClickedPattern.push(userChosenColour);
+  if (started) {
+    var userChosenColour = $(this).attr("id");
+    userClickedPattern.push(userChosenColour);
     playSound(userChosenColour);
     animatePress(userChosenColour);
     checkAnswer(userClickedPattern.length - 1);
-} else {
-$("body").removeClass("game-over");
-setTimeout(function () {
-$("body").addClass("game-over");
-}, 100);
-}
+  } else {
+    $("body").removeClass("game-over");
+    setTimeout(function () {
+      $("body").addClass("game-over");
+    }, 100);
+  }
 });
+```
