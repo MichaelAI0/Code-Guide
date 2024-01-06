@@ -62,7 +62,7 @@
 
 ### Game Initialization (nextSequence):
 
-- `nextSequence()`: A function that initializes a new game level by generating a random color and adding it to gamePattern. It also animates the sequence by fading in and out the buttons.
+- `nextSequence()`: A function that initializes a new game level by generating a random color and adding it to `gamePattern`. It also animates the sequence by fading in and out the buttons.
 
 ### User Input Handling:
 
