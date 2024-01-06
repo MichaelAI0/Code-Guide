@@ -147,25 +147,40 @@ var level = 0;
 
 // Event listener for a keypress to start the game
 $(document).keypress(function () {
+    // Check if the game has not started yet
     if (!started) {
+        // Update the game title to show the current level
         $("#level-title").text("Level " + level);
+
+        // Generate the first sequence and start the game
         nextSequence();
         started = true;
+
+        // Remove the "game-over" class from the body (if it was previously set)
         $("body").removeClass("game-over");
     }
 });
 
 // Event listener for button clicks
 $(".btn").click(function () {
+    // Check if the game has started
     if (started) {
+        // Get the color of the clicked button
         var userChosenColour = $(this).attr("id");
+
+        // Add the user's choice to the clicked pattern
         userClickedPattern.push(userChosenColour);
 
+        // Play the corresponding sound for the button
         playSound(userChosenColour);
+
+        // Animate the button press
         animatePress(userChosenColour);
 
+        // Check if the user's pattern matches the game pattern
         checkAnswer(userClickedPattern.length - 1);
     } else {
+        // If the game hasn't started, create a brief visual effect to indicate a wrong click
         $("body").removeClass("game-over");
         setTimeout(function () {
             $("body").addClass("game-over");
@@ -175,26 +190,39 @@ $(".btn").click(function () {
 
 // Function to generate the next sequence in the game
 function nextSequence() {
+    // Reset the user's clicked pattern
     userClickedPattern = [];
+
+    // Increase the level and update the title
     level++;
     $("#level-title").text("Level " + level);
 
+    // Generate a random number to select a color from the buttonColours array
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColour = buttonColours[randomNumber];
+
+    // Add the chosen color to the game pattern
     gamePattern.push(randomChosenColour);
 
+    // Animate and display the generated sequence to the user
     animateSequence(gamePattern);
 }
 
 // Function to play a sound based on the provided color
 function playSound(name) {
+    // Create an audio element and set its source to the corresponding sound file
     var audio = new Audio("sounds/" + name + ".mp3");
+
+    // Play the sound
     audio.play();
 }
 
 // Function to animate a button press
 function animatePress(currentColor) {
+    // Add a "pressed" class to the button to create a visual effect
     $("#" + currentColor).addClass("pressed");
+
+    // Remove the "pressed" class after a short delay to revert the visual effect
     setTimeout(function () {
         $("#" + currentColor).removeClass("pressed");
     }, 100);
@@ -202,24 +230,34 @@ function animatePress(currentColor) {
 
 // Function to check the user's answer
 function checkAnswer(currentLevel) {
+    // Check if the user's choice matches the corresponding color in the game pattern
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+        // Check if the user has completed the current sequence
         if (userClickedPattern.length === gamePattern.length) {
+            // Delay the start of the next sequence to provide feedback
             setTimeout(function () {
                 nextSequence();
             }, 1000);
+
+            // Update the game title to indicate success
             $("#level-title").text("SUCCESS!!");
         }
     } else {
+        // Play a "wrong" sound and set the "game-over" class to indicate a mistake
         playSound("wrong");
         $("body").addClass("game-over");
+
+        // Update the game title to indicate the game is over and can be restarted
         $("#level-title").html("<b>Game Over</b><br><br> Press Any Key to Restart");
 
+        // Reset the game to the starting state
         startOver();
     }
 }
 
 // Function to reset the game to the starting state
 function startOver() {
+    // Reset the level, game pattern, and game state
     level = 0;
     gamePattern = [];
     started = false;
