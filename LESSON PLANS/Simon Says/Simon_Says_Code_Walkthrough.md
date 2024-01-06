@@ -62,7 +62,7 @@
 
 ### Game Initialization (nextSequence):
 
-- nextSequence(): A function that initializes a new game level by generating a random color and adding it to gamePattern. It also animates the sequence by fading in and out the buttons.
+- `nextSequence()`: A function that initializes a new game level by generating a random color and adding it to gamePattern. It also animates the sequence by fading in and out the buttons.
 
 ### User Input Handling:
 
@@ -72,7 +72,7 @@
 
 ### Checking Answers (checkAnswer):
 
-- checkAnswer(currentLevel): A function that compares the user's input to Simon's sequence. If the input is correct, the game proceeds to the next level; otherwise, it triggers a game over scenario.
+- `checkAnswer(currentLevel)`: A function that compares the user's input to Simon's sequence. If the input is correct, the game proceeds to the next level; otherwise, it triggers a game over scenario.
 
 ### Game Over Handling:
 
@@ -80,11 +80,11 @@
 
 ### Additional Functions:
 
-- playSound(name): Plays the sound associated with a color or "wrong."
+- `playSound(name)`: Plays the sound associated with a color or "wrong."
 
-- animatePress(currentColor): Adds a visual effect when a button is clicked.
+- `animatePress(currentColor)`: Adds a visual effect when a button is clicked.
 
-- startOver(): Resets the game variables to start a new game.
+- `startOver()`: Resets the game variables to start a new game.
 
 ### Customization and Expansion:
 
