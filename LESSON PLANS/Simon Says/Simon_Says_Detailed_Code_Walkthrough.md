@@ -117,8 +117,8 @@ yellow {
 
 - `body`: Styles applied to the entire body of the game, including text alignment and background color.
 - `#level-title`: Styles for the game's title, setting font family, font size, margins, and text color.
-- ``.container`: Styles for the container div, controlling its display, width, and centering it on the page.
-- ``.btn`: Styles for the game buttons, including margins, display, dimensions, border, and border-radius.
-- ``.game-over`: Styles for the game-over message, specifying its background color and opacity.
+- `.container`: Styles for the container div, controlling its display, width, and centering it on the page.
+- `.btn`: Styles for the game buttons, including margins, display, dimensions, border, and border-radius.
+- `.game-over`: Styles for the game-over message, specifying its background color and opacity.
 - Individual classes like ` .red`, ` .green`, `.blue`, and `.yellow ` define background colors for respective buttons.
-- ``.pressed`: Styles for the button pressed effect, adding a box shadow and changing the background color.
+- `.pressed`: Styles for the button pressed effect, adding a box shadow and changing the background color.
