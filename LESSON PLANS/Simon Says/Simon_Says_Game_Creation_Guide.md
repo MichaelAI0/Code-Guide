@@ -14,23 +14,23 @@ In this guide, you'll create a Simon Says game from scratch. You don't need any 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simon Says</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Simon Says</title> <!-- Set the title of the game -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styling -->
 </head>
 <body>
-    <h1 id="level-title">Press A Key to Start</h1>
-    <div class="container">
-        <div class="row">
-            <div type="button" id="green" class="btn green"></div>
-            <div type="button" id="red" class="btn red"></div>
+    <h1 id="level-title">Press A Key to Start</h1> <!-- Display the game's title -->
+    <div class="container"> <!-- Create a container for game elements -->
+        <div class="row"> <!-- Create a row for buttons -->
+            <div type="button" id="green" class="btn green"></div> <!-- Create a green button -->
+            <div type="button" id="red" class="btn red"></div> <!-- Create a red button -->
         </div>
-        <div class="row">
-            <div type="button" id="yellow" class="btn yellow"></div>
-            <div type="button" id="blue" class="btn blue"></div>
+        <div class="row"> <!-- Create another row for buttons -->
+            <div type="button" id="yellow" class="btn yellow"></div> <!-- Create a yellow button -->
+            <div type="button" id="blue" class="btn blue"></div> <!-- Create a blue button -->
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
-    <script src="game.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script> <!-- Link to the jQuery library for JavaScript functionality -->
+    <script src="game.js" defer></script> <!-- Link to an external JavaScript file for game logic -->
 </body>
 </html>
 ```
