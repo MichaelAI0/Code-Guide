@@ -58,60 +58,78 @@ In this guide, you'll create a Simon Says game from scratch. You don't need any 
 
 ```CSS
 /* Apply styles to the body of the game */
+
+/* Set the text alignment to the center, aligning game content */
 body {
     text-align: center;
-    background-color: #011f3f;
+    background-color: #011f3f; /* Set the background color to a dark blue */
 }
 
 /* Style for the game's title */
+
+/* Use the "Press Start 2P" font for a retro gaming feel */
 #level-title {
     font-family: "Press Start 2P", cursive;
-    font-size: 3rem;
-    margin: 5%;
-    color: #fef2bf;
+    font-size: 3rem; /* Set the font size to 3 rem units (48 pixels) */
+    margin: 5%; /* Add 5% margin on all sides to create space */
+    color: #fef2bf; /* Set the text color to a light beige */
 }
 
 /* Style for the game container */
+
+/* Center the container horizontally with a maximum width of 50% of the viewport */
 .container {
     display: block;
     width: 50%;
-    margin: auto;
+    margin: auto; /* Center the container horizontally */
 }
 
 /* Style for the game buttons */
+
+/* Add space around the buttons and set a specific size and border */
 .btn {
-    margin: 25px;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    border: 10px solid black;
-    border-radius: 20%;
+    margin: 25px; /* Add 25 pixels of margin around each button */
+    display: inline-block; /* Display buttons inline, next to each other */
+    height: 150px; /* Set the button height to 150 pixels */
+    width: 150px; /* Set the button width to 150 pixels */
+    border: 10px solid black; /* Add a 10-pixel black border around the buttons */
+    border-radius: 20%; /* Round the corners of the buttons to create a circular shape */
 }
 
 /* Style for the red button */
+
+/* Set the background color of the red button to red */
 .red {
     background-color: red;
 }
 
 /* Style for the blue button */
+
+/* Set the background color of the blue button to blue */
 .blue {
     background-color: blue;
 }
 
 /* Style for the green button */
+
+/* Set the background color of the green button to green */
 .green {
     background-color: green;
 }
 
 /* Style for the yellow button */
+
+/* Set the background color of the yellow button to yellow */
 .yellow {
     background-color: yellow;
 }
 
 /* Style for the pressed button effect */
+
+/* Define styles for a pressed button (to be implemented) */
 .pressed {
-    box-shadow: 0 0 20px white;
-    background-color: grey;
+    box-shadow: 0 0 20px white; /* Add a white box-shadow for a glowing effect */
+    background-color: grey; /* Change the background color to grey when pressed */
 }
 ```
 
