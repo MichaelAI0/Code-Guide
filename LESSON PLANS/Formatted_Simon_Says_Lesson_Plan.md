@@ -34,7 +34,7 @@ By the end of this lesson, students will be able to:
 
 - Discuss the importance of HTML, CSS, and JavaScript in web development.
 
-1. HTML and CSS Setup (30 minutes)
+2. HTML and CSS Setup (30 minutes)
 
 - Review the provided HTML and CSS code.
 
