@@ -4,81 +4,66 @@ In this guide, you'll learn how to add exciting new features to your Simon Says 
 
 ## Feature 1: Countdown Timer
 
-**Purpose:** Add a countdown timer for each level to increase the challenge.
+### HTML:
 
-### Implementation:
+1. Add a timer element inside the `<body>` of your HTML file.
 
-1. **HTML:**
+**html**
 
-- Create an HTML element to display the timer.
-  ```HTML
-  <div id="timer">10</div>
-  ```
+`<div id="timer">10</div>`
 
-2. **JavaScript:**
+**JavaScript:**
 
-- Initialize a timer variable (e.g., `var countdown = 10;`) to set the initial time.
-- Use setInterval to decrease the timer value every second.
-- Update the timer element's content with the remaining time.
+1. Initialize a timer variable at the beginning of your JavaScript file.
 
-```javascript
-// Update the timer element's content
+`var countdown = 10; // Initialize the timer with 10 seconds` 2. Create a function to update the timer element's content.
+
+```
 function updateTimer() {
-  $("#timer").text(countdown);
+    $("#timer").text(countdown); // Update the timer display with the current countdown value
 }
-
-// Start the countdown timer
-var timerInterval = setInterval(function () {
-  countdown--;
-  updateTimer();
-
-  // Check if time is up
-  if (countdown === 0) {
-    clearInterval(timerInterval);
-    // Implement game over logic here
-  }
-}, 1000);
 ```
 
-## Feature 2: Difficulty Levels
+3. Start the countdown timer when the game starts.
 
-**Purpose:** Implement different difficulty levels (easy, medium, hard) that affect the game's speed or pattern complexity.
-
-### Implementation:
-
-1. **HTML:**
-
-- Create a difficulty selection menu (e.g., radio buttons or a dropdown).
-
-```HTML
-<select id="difficulty">
-    <option value="easy">Easy</option>
-    <option value="medium">Medium</option>
-    <option value="hard">Hard</option>
-</select>
 ```
+$(document).keypress(function () {
+    if (!started) { // Check if the game has not started
+        $("#level-title").text("Level " + level); // Display the current level
+        nextSequence(); // Start the game
+        started = true; // Set the game as started
+        $("body").removeClass("game-over"); // Remove the "game-over" class from the body
 
-2. **JavaScript:**
-
-- Adjust game variables (e.g., sequence speed, pattern length) based on the selected difficulty level.
-- Listen for changes in the difficulty selection.
-
-```javascript
-// Get the selected difficulty level
-var selectedDifficulty = $("#difficulty").val();
-
-// Adjust game settings based on the selected difficulty
-if (selectedDifficulty === "easy") {
-  // Modify game settings for easy mode
-} else if (selectedDifficulty === "medium") {
-  // Modify game settings for medium mode
-} else if (selectedDifficulty === "hard") {
-  // Modify game settings for hard mode
-}
-
-// Listen for changes in difficulty selection
-$("#difficulty").change(function () {
-  selectedDifficulty = $(this).val();
-  // Adjust game settings when the difficulty changes
+        updateTimer(); // Display the initial time
+        // ... (existing code)
+    }
 });
 ```
+
+4. Add a timer interval to decrease the timer value every second and check if time is up.
+
+```
+var timerInterval; // Initialize a variable to hold the timer interval ID
+
+$(document).keypress(function () {
+    if (!started) {
+        // ... (existing code)
+
+        timerInterval = setInterval(function () {
+            countdown--; // Decrease the countdown by 1 second
+            updateTimer(); // Update the timer display
+
+            if (countdown === 0) { // Check if time is up
+                clearInterval(timerInterval); // Clear the timer interval
+                $("#level-title").html("<b>Game Over</b><br><br> Press Any Key to Restart"); // Display game over message
+                playSound("wrong"); // Play the wrong sound
+                $("body").addClass("game-over"); // Add the "game-over" class to the body
+                startOver(); // Reset the game
+            }
+        }, 1000); // Execute the timer function every 1000 milliseconds (1 second)
+        // ... (existing code)
+    }
+});
+```
+
+**This code provides a step-by-step implementation for adding the Countdown Timer feature to your Simon Says game, complete with explicit documentation for each line. Please integrate these code snippets into your existing project to implement this feature.**
