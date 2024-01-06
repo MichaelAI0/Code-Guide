@@ -216,7 +216,7 @@ $(".btn").click(function () {
 
 ### HTML:
 
-1. Add "Pause" and "Resume" buttons inside the <body> of your HTML file.
+1. Add "Pause" and "Resume" buttons inside the `<body>` of your HTML file.
 
 ```HTML
 <button id="pause-button">Pause</button>
@@ -226,48 +226,61 @@ $(".btn").click(function () {
 
 ### Javascript
 
-1. Add event listeners for the "Pause" and "Resume" buttons.
+1. Initialize a variable to track if the game is paused.
+
+```javascript
+var gamePaused = false; // Initialize a variable to track if the game is paused
+```
+
+2. Add event listeners for the "Pause" and "Resume" buttons.
 
 ```javascript
 // Add event listener for the "Pause" button
 $("#pause-button").click(function () {
-  // Implement pause logic here (e.g., pause timers and animations)
+  if (!gamePaused) {
+    // Check if the game is not already paused
+    gamePaused = true; // Set the game as paused
+    pauseGame(); // Call the pauseGame function to implement pause logic
+  }
 });
 
 // Add event listener for the "Resume" button
 $("#resume-button").click(function () {
-  // Implement resume logic here (e.g., resume timers and animations)
+  if (gamePaused) {
+    // Check if the game is paused
+    gamePaused = false; // Set the game as not paused
+    resumeGame(); // Call the resumeGame function to implement resume logic
+  }
 });
 ```
 
-2. Implement the pause and resume logic inside the event listeners as needed for your game. You should pause any timers, animations, or gameplay when the "Pause" button is clicked and resume them when the "Resume" button is clicked.
+3. Implement the pause and resume logic inside functions `pauseGame()` and `resumeGame()` as needed for your game.
 
 ```javascript
-// Example: Implement pause and resume logic for timers
-var timerPaused = false; // Initialize a variable to track if the timer is paused
+// Function to pause the game
+function pauseGame() {
+  // Implement pause logic here (e.g., pause timers and animations)
+  clearInterval(timerInterval); // Clear the timer interval
+  $(".btn").prop("disabled", true); // Disable button clicks
+}
 
-$("#pause-button").click(function () {
-  if (!timerPaused) {
-    clearInterval(timerInterval); // Pause the timer interval
-    timerPaused = true;
-  }
-});
+// Function to resume the game
+function resumeGame() {
+  // Implement resume logic here (e.g., resume timers and animations)
+  timerInterval = setInterval(function () {
+    countdown--;
+    updateTimer();
 
-$("#resume-button").click(function () {
-  if (timerPaused) {
-    timerInterval = setInterval(function () {
-      countdown--;
-      updateTimer();
-
-      if (countdown === 0) {
-        clearInterval(timerInterval);
-        $("#level-title").html("<b>Game Over</b><br><br> Press Any Key to Restart");
-        playSound("wrong");
-        $("body").addClass("game-over");
-        startOver();
-      }
-    }, 1000);
-    timerPaused = false; // Resume the timer
-  }
-});
+    if (countdown === 0) {
+      clearInterval(timerInterval);
+      $("#level-title").html("<b>Game Over</b><br><br> Press Any Key to Restart");
+      playSound("wrong");
+      $("body").addClass("game-over");
+      startOver();
+    }
+  }, 1000);
+  $(".btn").prop("disabled", false); // Enable button clicks
+}
 ```
+
+4. In the `pauseGame()` and `resumeGame()` functions, you can implement logic to pause and resume any timers, animations, or gameplay elements specific to your game.
