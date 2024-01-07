@@ -8,10 +8,12 @@ Hello young explorer! Are you ready to embark on a fantastic journey of learning
 
 ### HTML - Building the Structure
 
-Crafting a Web Page: You'll learn how to create a basic web page using HTML. It's like making a digital skeleton where everything in the game will fit.
-Lesson 2: Organizing Content: Discover how to arrange different elements, like buttons and titles, on your webpage.
-CSS - Adding Style and Color
-Lesson 3: Making It Look Cool: Here, you'll learn about CSS, which is like the game's outfit. You'll understand how to change colors, shapes, and sizes to make the game look appealing.
+**Crafting a Web Page:** You'll learn how to create a basic web page using HTML. It's like making a digital skeleton where everything in the game will fit.
+**Organizing Content:** Discover how to arrange different elements, like buttons and titles, on your webpage.
+
+### CSS - Adding Style and Color
+
+**Making It Look Cool:** Here, you'll learn about CSS, which is like the game's outfit. You'll understand how to change colors, shapes, and sizes to make the game look appealing.
 Lesson 4: Responsive Design: Learn how to make your game look great on different devices, whether on a computer, tablet, or phone.
 JavaScript and jQuery - Bringing the Game to Life
 Lesson 5: Interactive Elements: You'll get to know JavaScript and jQuery, the magic that makes the buttons light up and respond when clicked.
