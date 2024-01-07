@@ -156,8 +156,8 @@ var gameSpeed = 1000; // in milliseconds
 function nextSequence() {
   // existing code...
 
-  // Reduce the game speed by 100 milliseconds every 5 levels
-  if (level % 5 === 0 && gameSpeed > 500) {
+  // Reduce the game speed by 100 milliseconds every 2 levels
+  if (level % 2 === 0 && gameSpeed > 500) {
     gameSpeed -= 100;
   }
 
