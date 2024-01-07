@@ -321,12 +321,25 @@ function endGameDueToTimeout() {
 
 ```javascript
 function nextSequence() {
-  // existing code...
-  startTimer(); // Start the timer at the beginning of each sequence
+  // increase the amount of time it takes for the timer to start as the levels increase
+  let newInterval = 50;
+  newInterval += level * 30;
+
+  // Existing code...
+
+  // End existing code ...
+
+  clearInterval(timerId);
+  setTimeout(function () {
+    startTimer();
+  }, 1000 + level * newInterval);
 }
 ```
 
 - Modifies `nextSequence` to start the timer at the beginning of each new sequence.
+- Declares `newInterval` that increases after each level to delay the start of the timer.
+- `clearInterval` is called to clear the timer.
+- The start of the timer is delayed to give the next sequence time to be displayed to the user.
 
 ```javascript
 function startOver() {
