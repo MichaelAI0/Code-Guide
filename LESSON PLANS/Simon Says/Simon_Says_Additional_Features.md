@@ -124,6 +124,8 @@ function startOver() {
 }
 ```
 
+- - In the `startOver` function, `updateHighScores` is called with the player's final score (assumed to be `level - 1`).
+
 ### Initializing High Scores on Page Load
 
 ```javascript
@@ -133,7 +135,6 @@ $(document).ready(function () {
 });
 ```
 
-- In the `startOver` function, `updateHighScores` is called with the player's final score (assumed to be `level - 1`).
 - Utilizes jQuery to execute `displayHighScores` when the document is fully loaded, ensuring the high scores are displayed immediately.
 
 ##
