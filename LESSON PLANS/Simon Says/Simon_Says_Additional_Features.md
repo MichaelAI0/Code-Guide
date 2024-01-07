@@ -6,22 +6,25 @@
 
 ### High Scores Section
 
-```HTML
-<div id="high-score-list">
-  <!-- Section heading for High Scores -->
+Here, a new section in the HTML is added to display the high scores.
+
+```html
+<div id="high-score-list"></div>
   <h2>High Scores</h2>
-  <!-- Ordered list to display high scores -->
   <ol id="high-scores"></ol>
 </div>
 ```
 
-- `<div id="high-score-list">`: Container for the high scores list.
-- `<h2>High Scores</h2>`: Title for the high scores section.
-- `<ol id="high-scores">`: Ordered list where high scores will be dynamically inserted.
+- `div id="high-score-list"`: This creates a container for the high scores list.
+- `h2`: This heading displays the title "High Scores" above the list.
+- `ol id="high-scores"`: An ordered list where individual high scores will be dynamically listed.
+- `</div>`: Closes the div tag for the high scores container.
 
 ## CSS Documentation
 
 ### Styling the High Scores
+
+New styles for the high scores section are introduced.
 
 ```CSS
 #high-score-list {
@@ -82,6 +85,12 @@ function updateHighScores(newScore) {
 }
 ```
 
+- Declares the function updateHighScores with newScore as a parameter.
+- Retrieves high scores from local storage or initializes an empty array if none exist.
+- Adds the new score to the array, sorts the array in descending order, and keeps only the top 5 scores.
+- Updates the high scores in local storage.
+- Calls `displayHighScores` to refresh the displayed high scores, then closes the function.
+
 ### Display High Scores
 
 ```javascript
@@ -97,6 +106,11 @@ function displayHighScores() {
   highScoresList.innerHTML = highScores.map((score) => `<li>${score}</li>`).join("");
 }
 ```
+
+- Declares the function `displayHighScores`.
+- Fetches the high scores from local storage.
+- Selects the `high-scores` element from the HTML document.
+- Updates the inner HTML of the high scores list, formatting each score as a list item, then closes the function.
 
 ### Integrating High Scores into Game Logic
 
@@ -118,6 +132,9 @@ $(document).ready(function () {
   displayHighScores();
 });
 ```
+
+- In the `startOver` function, `updateHighScores` is called with the player's final score (assumed to be `level - 1`).
+- Utilizes jQuery to execute `displayHighScores` when the document is fully loaded, ensuring the high scores are displayed immediately.
 
 ##
 
