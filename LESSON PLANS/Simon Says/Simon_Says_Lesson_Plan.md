@@ -124,8 +124,8 @@
 
 ## Ideas for additional features:
 
-1. Difficulty Levels: Implement different speed levels for Simon's sequence as the game progresses. Make it faster as the player reaches higher levels, adding an extra challenge.
+1. **Difficulty Levels:** Implement different speed levels for Simon's sequence as the game progresses. Make it faster as the player reaches higher levels, adding an extra challenge.
 
-1. High Scores: Create a leaderboard to keep track of the highest scores or levels achieved by different players. Add a competitive element to encourage players to improve.
+1. **High Scores:** Create a leaderboard to keep track of the highest scores or levels achieved by different players. Add a competitive element to encourage players to improve.
 
-1. Game Timer: Add a timer to each level, challenging players to complete the sequence within a specific time limit.
+1. **Game Timer:** Add a timer to each level, challenging players to complete the sequence within a specific time limit.
