@@ -124,26 +124,8 @@
 
 ## Ideas for additional features:
 
-1. Speed Levels: Implement different speed levels for Simon's sequence as the game progresses. Make it faster as the player reaches higher levels, adding an extra challenge.
+1. Difficulty Levels: Implement different speed levels for Simon's sequence as the game progresses. Make it faster as the player reaches higher levels, adding an extra challenge.
 
-1. Random Patterns: Instead of only using colors, introduce additional patterns or symbols (e.g., shapes, numbers) that need to be repeated by the player.
+1. High Scores: Create a leaderboard to keep track of the highest scores or levels achieved by different players. Add a competitive element to encourage players to improve.
 
-1. Multiplayer Mode: Allow for multiplayer gameplay where multiple players take turns and compete for the highest score. Each player could have their turn after successfully repeating the sequence.
-
-1. Leaderboard: Create a leaderboard to keep track of the highest scores or levels achieved by different players. Add a competitive element to encourage players to improve.
-
-1. Sound Effects: Expand the sound effects library with more varied and complex audio cues for a more immersive experience.
-
-1. Color Themes: Enable players to choose from different color themes for the game's interface, allowing for personalization.
-
-1. Timer: Add a timer to each level, challenging players to complete the sequence within a specific time limit.
-
-1. Hint System: Implement a hint system that provides visual or auditory hints to the player if they get stuck.
-
-1. Custom Challenges: Let players create and share custom challenges with unique sequences for others to attempt.
-
-1. Achievements and Badges: Introduce an achievement system with badges or rewards for completing specific milestones or challenges.
-
-1. Advanced Animations: Enhance animations and transitions between levels for a more polished and visually appealing experience.
-
-1. Tutorial Mode: Create an optional tutorial mode for new players to learn the game's mechanics step by step.
+1. Game Timer: Add a timer to each level, challenging players to complete the sequence within a specific time limit.
