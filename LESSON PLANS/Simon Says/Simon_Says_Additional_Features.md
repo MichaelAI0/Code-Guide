@@ -249,7 +249,7 @@ After implementing these changes, test the game to ensure that the sequence spee
 }
 ```
 
-- Styles the timer container `(#timer-container`), setting margin from the top, text color, alignment, and font size.
+- Styles the timer container (`#timer-container`), setting margin from the top, text color, alignment, and font size.
 
 ## JavaScript Modifications and Additions
 
