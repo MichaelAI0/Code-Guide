@@ -20,12 +20,17 @@ Hello young explorer! Are you ready to embark on a fantastic journey of learning
 ### JavaScript and jQuery - Bringing the Game to Life
 
 - **Interactive Elements:** You'll get to know JavaScript and jQuery, the magic that makes the buttons light up and respond when clicked.
-  Lesson 6: Logic Building: This part teaches you how to think logically and write code for the game rules, like what happens when a player wins or loses.
-  Skill Development
-  Problem-Solving Skills
-  Challenge Time: While building the game, you'll face challenges and puzzles that you need to solve. It's a great way to boost your problem-solving skills!
-  Creativity and Design
-  Unleash Your Creativity: You'll have the chance to be creative, especially with designing the game's look and feel.
+- **Logic Building:** This part teaches you how to think logically and write code for the game rules, like what happens when a player wins or loses.
+
+## Skill Development
+
+### Problem-Solving Skills
+
+- **Challenge Time:** While building the game, you'll face challenges and puzzles that you need to solve. It's a great way to boost your problem-solving skills!
+
+### Creativity and Design
+
+- **Unleash Your Creativity:** You'll have the chance to be creative, especially with designing the game's look and feel.
   Attention to Detail
   Spot the Difference: Writing code requires attention to detail. You'll learn to be more careful and precise, which is super important in programming.
   Understanding Computer Programming
