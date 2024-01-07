@@ -119,6 +119,8 @@ $(document).ready(function () {
 });
 ```
 
+##
+
 # Fully Documented Difficulty Levels Feature for Simon Says Game
 
 **This documentation covers the implementation of the Difficulty Levels feature for the Simon Says game. The feature introduces dynamic speed adjustments based on the player's level, making the game more challenging and engaging as the player progresses. The implementation leverages JavaScript to manage the game's speed and ensure the animations and timings align with the increasing difficulty.**
