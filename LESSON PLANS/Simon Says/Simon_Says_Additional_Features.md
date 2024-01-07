@@ -124,7 +124,7 @@ function startOver() {
 }
 ```
 
-- - In the `startOver` function, `updateHighScores` is called with the player's final score (assumed to be `level - 1`).
+- In the `startOver` function, `updateHighScores` is called with the player's final score (assumed to be `level - 1`).
 
 ### Initializing High Scores on Page Load
 
