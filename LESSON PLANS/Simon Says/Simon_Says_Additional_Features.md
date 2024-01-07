@@ -216,3 +216,137 @@ function startOver() {
 ## Integration and Testing
 
 After implementing these changes, test the game to ensure that the sequence speed increases appropriately as the player advances through the levels. The speed adjustment should make the game progressively more challenging while remaining playable.
+
+##
+
+# Fully Documented Game Timer Feature for Simon Says Game
+
+## HTML Changes
+
+### Adding the Timer Display
+
+```html
+<div id="timer-container">
+  <h2>Time Left: <span id="timer"></span> seconds</h2>
+</div>
+```
+
+- Creates a `div` container for the timer display.
+- `h2` element displays the text "Time Left:".
+- `span id="timer"`: This span will dynamically show the remaining time in seconds.
+- Closes the `div` container for the timer.
+
+## CSS Additions
+
+### Styling the Timer
+
+```css
+#timer-container {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+```
+
+- Styles the timer container `(#timer-container`), setting margin from the top, text color, alignment, and font size.
+
+## JavaScript Modifications and Additions
+
+**With these additions, the Simon Says game will now include a timer for each level, challenging players to complete the sequence within the set time limit. Test the game to ensure the timer works correctly and resets appropriately at the start of each level or when the game restarts.**
+
+### Timer Functionality
+
+You will add new variables and functions to handle the timer feature.
+
+1. Declare New Variables:
+
+```javascript
+var timePerLevel = 10; // Time in seconds for each level
+var timerId;
+```
+
+- Sets the duration for each level in seconds.
+- Declares a variable `timerId` to keep track of the timer interval.
+
+2. Start Timer Function:
+   This function starts the countdown timer for each level.
+
+```javascript
+function startTimer() {
+  var currentTime = timePerLevel;
+  $("#timer").text(currentTime);
+
+  timerId = setInterval(function () {
+    currentTime--;
+    $("#timer").text(currentTime);
+
+    if (currentTime <= 0) {
+      clearInterval(timerId);
+      endGameDueToTimeout();
+    }
+  }, 1000);
+}
+```
+
+- Declares a function `startTimer` to handle the countdown timer.
+- Initializes `currentTime` with the value from `timePerLevel`.
+- Sets the initial time display in the HTML.
+- Starts a setInterval timer and assigns it to `timerId`.
+- Decreases `currentTime` by 1 each second.
+- Updates the timer display in the HTML.
+- Checks if `currentTime` has reached 0.
+- Stops the timer.
+- Calls `endGameDueToTimeout` when time runs out.
+- The interval is set to 1000 milliseconds (1 second), then closes the function.
+
+3. End Game Due to Timeout Function:
+   This function handles what happens when the time runs out.
+
+```javascript
+function endGameDueToTimeout() {
+  playSound("wrong");
+  $("#level-title").text("Time's Up! Press Any Key to Restart");
+  startOver();
+}
+```
+
+- Declares a function `endGameDueToTimeout` for handling the end of the game due to time running out.
+- Plays the "wrong" sound indicating the player has run out of time.
+- Updates the level title to indicate that the time is up.
+- Calls the `startOver` function to reset the game, then closes the function.
+
+4. Modify Existing Functions:
+   Update the `nextSequence` and `startOver` functions to integrate the timer.
+
+```javascript
+function nextSequence() {
+  // existing code...
+  startTimer(); // Start the timer at the beginning of each sequence
+}
+```
+
+- Modifies `nextSequence` to start the timer at the beginning of each new sequence.
+
+```javascript
+function startOver() {
+  clearInterval(timerId); // Stop the timer
+  // existing code...
+}
+```
+
+- Modifies `startOver` to stop the timer when the game is reset.
+
+5. Integrate Timer Start on Game Start:
+   In the keypress event handler, ensure the timer starts when the game begins.
+
+```javascript
+$(document).keypress(function () {
+  if (!started) {
+    // existing code...
+    startTimer();
+  }
+});
+```
+
+- Modifies the keypress event handler to start the timer when the game begins.
