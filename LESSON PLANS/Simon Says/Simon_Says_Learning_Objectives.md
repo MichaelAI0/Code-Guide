@@ -1,11 +1,14 @@
 # Learning Objectives for the Simon Says Game Project
 
-Introduction
+## Introduction
+
 Hello young explorer! Are you ready to embark on a fantastic journey of learning with the Simon Says game project? This isn't just a game; it's a treasure trove of knowledge and skills waiting for you to uncover. Let's dive into what you'll learn while creating this exciting game!
 
-Understanding Web Development Basics
-HTML - Building the Structure
-Lesson 1: Crafting a Web Page: You'll learn how to create a basic web page using HTML. It's like making a digital skeleton where everything in the game will fit.
+## Understanding Web Development Basics
+
+### HTML - Building the Structure
+
+Crafting a Web Page: You'll learn how to create a basic web page using HTML. It's like making a digital skeleton where everything in the game will fit.
 Lesson 2: Organizing Content: Discover how to arrange different elements, like buttons and titles, on your webpage.
 CSS - Adding Style and Color
 Lesson 3: Making It Look Cool: Here, you'll learn about CSS, which is like the game's outfit. You'll understand how to change colors, shapes, and sizes to make the game look appealing.
