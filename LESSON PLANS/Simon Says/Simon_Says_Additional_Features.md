@@ -118,3 +118,81 @@ $(document).ready(function () {
   displayHighScores();
 });
 ```
+
+# Fully Documented Difficulty Levels Feature for Simon Says Game
+
+**This documentation covers the implementation of the Difficulty Levels feature for the Simon Says game. The feature introduces dynamic speed adjustments based on the player's level, making the game more challenging and engaging as the player progresses. The implementation leverages JavaScript to manage the game's speed and ensure the animations and timings align with the increasing difficulty.**
+
+## Overview
+
+The "Difficulty Levels" feature enhances the Simon Says game by increasing the speed of Simon's sequence as the player progresses to higher levels, adding an extra challenge.
+
+## HTML Documentation
+
+### No additional HTML modifications are needed for this feature.
+
+## CSS Documentation
+
+### No additional CSS modifications are needed for this feature.
+
+## JavaScript Documentation
+
+### Modifications and Additions for Difficulty Levels
+
+1. Add a Variable for Speed
+
+```javascript
+// Initial speed of the game
+var gameSpeed = 1000; // in milliseconds
+```
+
+- `gameSpeed` represents the speed of the game. It starts at 1000 milliseconds (1 second).
+
+2. Modify the nextSequence Function to Adjust Speed
+
+```javascript
+function nextSequence() {
+  // existing code...
+
+  // Reduce the game speed by 100 milliseconds every 5 levels
+  if (level % 5 === 0 && gameSpeed > 500) {
+    gameSpeed -= 100;
+  }
+
+  // existing code to generate sequence...
+}
+```
+
+- This modification adjusts the `gameSpeed` by reducing it by 100 milliseconds every 5 levels, making the game faster. The speed won't go below 500 milliseconds to maintain playability.
+
+3. Update the Timing in Animations
+
+```javascript
+// In the nextSequence function
+for (let i = 0; i < gamePattern.length; i++) {
+  setTimeout(function () {
+    $("#" + gamePattern[i])
+      .fadeOut(gameSpeed / 2)
+      .fadeIn(gameSpeed / 2);
+  }, gameSpeed * i);
+}
+```
+
+- Update the timing for the `fadeOut` and `fadeIn` animations and the `setTimeout` delay to use the `gameSpeed` variable. This ensures the speed of the sequence matches the current game speed.
+
+4. Reset Game Speed on Game Over
+
+```javascript
+function startOver() {
+  // Reset game speed to initial value
+  gameSpeed = 1000;
+
+  // existing code...
+}
+```
+
+- When the game is over and starts over, reset the `gameSpeed` to its initial value.
+
+## Integration and Testing
+
+After implementing these changes, test the game to ensure that the sequence speed increases appropriately as the player advances through the levels. The speed adjustment should make the game progressively more challenging while remaining playable.
