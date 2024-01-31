@@ -2,6 +2,7 @@
 
 - Finalize 4 apps
 - Determine what documentation is needed for teacher / student
+  - PowerPoint deck
 - Format of class
   - Breakdown hourly
   - html/css/javascript sections
