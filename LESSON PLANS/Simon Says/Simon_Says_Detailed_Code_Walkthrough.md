@@ -181,22 +181,39 @@ $(".btn").click(function () {
 
 // Function to generate the next sequence in the game
 function nextSequence() {
-  // Reset the user's clicked pattern for the new level
-  userClickedPattern = [];
-  // Increment the game level
-  level++;
-  // Update the level title with the new level
-  $("#level-title").text("Level " + level);
+  // Resets the user's color pattern array for a new sequence
+userClickedPattern = [];
 
-  // Generate a random number between 0 and 3 to select a color
-  var randomNumber = Math.floor(Math.random() * 4);
-  // Use the random number to select a color from buttonColours
-  var randomChosenColour = buttonColours[randomNumber];
-  // Add the selected color to the game's pattern
-  gamePattern.push(randomChosenColour);
+// Increments the current level by 1
+level++;
 
-  // Play the animation and sound for the generated sequence
-  animateSequence(gamePattern);
+// Updates the text displayed on the web page to show the current level
+$("#level-title").text("Level " + level);
+
+// Generates a random number between 0 and 3
+var randomNumber = Math.floor(Math.random() * 4);
+
+// Selects a random color based on the randomNumber from the buttonColours array
+var randomChosenColour = buttonColours[randomNumber];
+
+// Adds the randomly chosen color to the end of the gamePattern array
+gamePattern.push(randomChosenColour);
+
+// Loops through each color in the gamePattern array
+for (let i = 0; i < gamePattern.length; i++) {
+  // Sets a timeout to create a delay in showing each color in the sequence
+  setTimeout(function () {
+    // Selects the button with the ID matching the current color in the sequence
+    // and applies a fade out and fade in effect to visually indicate the color
+    $("#" + gamePattern[i])
+      .fadeOut(100)
+      .fadeIn(100);
+  }, 500 * i); // The delay increases with each iteration to create a sequence effect
+}
+
+// Logs the current game pattern to the console for debugging
+console.log("gamePattern:", gamePattern);
+
 }
 
 // Function to play a sound based on the provided color
