@@ -102,7 +102,7 @@ body {
   background-color: blue;
 }
 
-yellow {
+.yellow {
   background-color: yellow;
 }
 
