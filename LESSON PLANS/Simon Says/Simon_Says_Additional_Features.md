@@ -66,7 +66,7 @@ New styles for the high scores section are introduced.
 // Updates the high scores and stores them in local storage
 function updateHighScores(newScore) {
   // Retrieve high scores from local storage or initialize an empty array
-  let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
   // Add the new score to the high scores array
   highScores.push(newScore);
@@ -78,7 +78,7 @@ function updateHighScores(newScore) {
   highScores = highScores.slice(0, 5);
 
   // Update the high scores in local storage
-  localStorage.setItem("highScores", JSON.stringify(highScores));
+  localStorage.setItem('highScores', JSON.stringify(highScores));
 
   // Refresh the display of high scores
   displayHighScores();
@@ -97,13 +97,13 @@ function updateHighScores(newScore) {
 // Displays the high scores on the webpage
 function displayHighScores() {
   // Retrieve high scores from local storage or initialize an empty array
-  let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
   // Select the high scores list element
-  const highScoresList = document.getElementById("high-scores");
+  const highScoresList = document.getElementById('high-scores');
 
   // Update the list's HTML with the high scores
-  highScoresList.innerHTML = highScores.map((score) => `<li>${score}</li>`).join("");
+  highScoresList.innerHTML = highScores.map((score) => `<li>${score}</li>`).join('');
 }
 ```
 
@@ -130,6 +130,7 @@ function startOver() {
 
 ```javascript
 // Display high scores when the document is ready
+// Add to the very bottom of your javascript file
 $(document).ready(function () {
   displayHighScores();
 });
@@ -191,7 +192,7 @@ function nextSequence() {
 // In the nextSequence function
 for (let i = 0; i < gamePattern.length; i++) {
   setTimeout(function () {
-    $("#" + gamePattern[i])
+    $('#' + gamePattern[i])
       .fadeOut(gameSpeed / 2)
       .fadeIn(gameSpeed / 2);
   }, gameSpeed * i);
@@ -275,11 +276,11 @@ var timerId;
 ```javascript
 function startTimer() {
   var currentTime = timePerLevel;
-  $("#timer").text(currentTime);
+  $('#timer').text(currentTime);
 
   timerId = setInterval(function () {
     currentTime--;
-    $("#timer").text(currentTime);
+    $('#timer').text(currentTime);
 
     if (currentTime <= 0) {
       clearInterval(timerId);
@@ -305,8 +306,8 @@ function startTimer() {
 
 ```javascript
 function endGameDueToTimeout() {
-  playSound("wrong");
-  $("#level-title").text("Time's Up! Press Any Key to Restart");
+  playSound('wrong');
+  $('#level-title').text("Time's Up! Press Any Key to Restart");
   startOver();
 }
 ```
