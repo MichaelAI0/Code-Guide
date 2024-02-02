@@ -9,6 +9,7 @@
 Here, a new section in the HTML is added to display the high scores.
 
 ```html
+<!-- Add to the bottom of your html file, right above the closing </body> tag-->
 <div id="high-score-list"></div>
   <h2>High Scores</h2>
   <ol id="high-scores"></ol>
