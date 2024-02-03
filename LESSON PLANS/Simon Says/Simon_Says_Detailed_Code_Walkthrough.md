@@ -1,31 +1,48 @@
 ## HTML Code Walkthrough (index.html)
 
 ```HTML
+<!-- Defines the document type and version of HTML -->
 <!DOCTYPE html>
+<!-- Specifies the language and direction of the document -->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Simon</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous" defer></script>
-    <script src="./game.js" defer></script>
-  </head>
+<head>
+  <!-- Contains meta-information about the document -->
+  <meta charset="utf-8" />
+  <!-- Sets the title of the document, shown in the browser tab -->
+  <title>Simon</title>
+  <!-- Links to an external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Imports a specific font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+  <!-- Includes jQuery from a CDN, with defer attribute to delay script execution until after the document has been parsed -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous" defer></script>
+  <!-- Links to an external JavaScript file, also with defer to delay execution -->
+  <script src="game.js" defer></script>
+</head>
 
-  <body>
-    <h1 id="level-title">Press A Key to Start</h1>
-    <div class="container">
-      <div class="row">
-        <div type="button" id="green" class="btn green"></div>
-        <div type="button" id="red" class="btn red"></div>
-      </div>
-
-      <div class="row">
-        <div type="button" id="yellow" class="btn yellow"></div>
-        <div type="button" id="blue" class="btn blue"></div>
-      </div>
+<body>
+  <!-- Contains the content of the document -->
+  <!-- A heading displaying instructions to start the game -->
+  <h1 id="level-title">Press A Key to Start</h1>
+  <!-- A container that wraps the game buttons -->
+  <div class="container">
+    <!-- A row that contains two game buttons -->
+    <div class="row">
+      <!-- A green button for the game -->
+      <div type="button" id="green" class="btn green"></div>
+      <!-- A red button for the game -->
+      <div type="button" id="red" class="btn red"></div>
     </div>
-  </body>
+
+    <!-- Another row that contains two more game buttons -->
+    <div class="row">
+      <!-- A yellow button for the game -->
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <!-- A blue button for the game -->
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+  </div>
+</body>
 </html>
 ```
 
