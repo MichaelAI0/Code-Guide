@@ -117,11 +117,14 @@ function displayHighScores() {
 
 ```javascript
 // Modify startOver function to include high score updates
-function startOver() {
+function checkAnswer() {
   // existing code...
 
   // Update high scores with the final score (assuming 'level - 1' is the score)
+} esle {
+  // existing code ...
   updateHighScores(level - 1);
+  startOver();
 }
 ```
 
