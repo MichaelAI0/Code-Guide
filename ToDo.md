@@ -27,6 +27,19 @@
     - do the javascript
   - App in a day done
 
+### - Keeping Students Engaged
+
+- **Interactive Elements:** Live coding examples.
+- **Quizzes and Challenges:** Reinforce learning.
+- **Real-World Examples:** Break down well-known websites.
+
+### - Exporting to Google Slides
+
+- Use high-contrast colors.
+- Include code snippets as images.
+- Embed links to resources or interactive platforms.
+- Utilize built-in diagrams for charts.
+
 ### - Feb EOM: App 1: simon
 
 ### - Mar EOM: App 2: monster
