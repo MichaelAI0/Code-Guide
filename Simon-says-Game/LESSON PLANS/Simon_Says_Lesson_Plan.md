@@ -18,7 +18,7 @@
 
   - Use CSS to style HTML elements.
 
-  - Create an interactive game using JavaScript and jQuery.
+  - Create an interactive game using JavaScript.
 
   - Learn about event handling and user interaction.
 

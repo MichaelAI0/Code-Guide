@@ -17,9 +17,9 @@ Hello young explorer! Are you ready to embark on a fantastic journey of learning
 
 - **Responsive Design:** Learn how to make your game look great on different devices, whether on a computer, tablet, or phone.
 
-### JavaScript and jQuery - Bringing the Game to Life
+### JavaScript - Bringing the Game to Life
 
-- **Interactive Elements:** You'll get to know JavaScript and jQuery, the magic that makes the buttons light up and respond when clicked.
+- **Interactive Elements:** You'll get to know JavaScript, the magic that makes the buttons light up and respond when clicked.
 - **Logic Building:** This part teaches you how to think logically and write code for the game rules, like what happens when a player wins or loses.
 
 ## Skill Development
