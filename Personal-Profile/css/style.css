@@ -1,48 +1,208 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: #1a202c;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #333;
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  width: 100%;
+}
+/* Creating responsive media queries */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
-nav ul li {
-  margin: 0 20px;
+.header-section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-header {
-  color: white;
+.header-title {
   text-align: center;
-  background-size: cover;
-  padding: 100px 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.section-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.profile-section-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .profile-section-div {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .profile-section-img-div {
+    width: 33.333333%;
+  }
+}
+@media (min-width: 768px) {
+  .profile-section-name-div {
+    width: 66.666667%;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+}
+.profile-section-name-div {
+  margin-top: 24px;
 }
 
-.profile-pic img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 4px solid #fff;
+.profile-name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.profile-text {
+  color: rgba(156, 163, 175, 1);
+}
+/* Red (R): The first value (156) represents the amount of red in the color, ranging from 0 to 255.
+Green (G): The second value (163) represents the amount of green in the color, also ranging from 0 to 255.
+Blue (B): The third value (175) represents the amount of blue in the color, also ranging from 0 to 255.
+Alpha (A): The fourth value (1) represents the alpha channel or opacity of the color, ranging from 0 (fully transparent) to 1 (fully opaque).
+We assign this rgba value to the color property */
+
+.section-h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.section-grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 768px) {
+  .section-grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .section-grid-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.section-grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .section-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #2d2d2d;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card-description {
+  color: #9ca3af;
+}
+
+.projects-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: #2d2d2d;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.project-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.project-card-description {
+  color: #9ca3af;
+}
+
+.footer-container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 32px 16px;
+  text-align: center;
 }
 
-.dark-theme {
-  background-color: #333;
-  color: white;
-}
-
-.dark-theme nav ul {
-  background-color: #222;
-}
-
-.dark-theme nav ul li a {
-  color: #ddd;
+.footer-text {
+  color: #9ca3af;
 }

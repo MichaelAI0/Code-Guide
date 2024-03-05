@@ -3,48 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
+    <title>Personal Profile</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Create your Navbar -->
-    <nav>
-      <ul>
-        <!-- Routes -->
-
-        <!-- TODO: finish about and contact pages -->
-
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contacts</a></li>
-      </ul>
-    </nav>
-
-    <!-- TODO: Create a header with a background image and a profile picture -->
-
-    <header style="background-image: url('assets/')">
-      <div class="profile-pic">
-        <img src="assets/" alt="My Profile Picture" />
-      </div>
-      <h1>John Doe</h1>
-      <p>Bio - A short introduction</p>
+    <header class="container header-section">
+      <h1 class="header-title">My Personal Profile</h1>
     </header>
-
-    <!-- TODO: Brief about section  -->
-
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Detailed section about skills, hobbies, and interests.</p>
+    <!-- Profile Section -->
+    <section class="container section-container">
+      <div class="profile-section-div">
+        <div class="profile-section-img-div">
+          <img
+            src="https://via.placeholder.com/300x400"
+            alt="Your profile picture"
+          />
+        </div>
+        <div class="profile-section-name-div">
+          <h2 class="profile-name">Hi, I'm [Your Name]</h2>
+          <p class="profile-text">
+            I'm learning Web Development basics with YCL
+          </p>
+        </div>
+      </div>
     </section>
-
-    <!-- TODO: Finish up the footer section  -->
-
-    <!-- footer section contact links social media widgets or icons-->
-
-    <footer>
-      <p>Contact info and Social Media links.</p>
+    <!-- My Skills Section-->
+    <section class="container section-container">
+      <h2 class="section-h2">My Skills</h2>
+      <div class="section-grid-container">
+        <div class="card">
+          <h3 class="card-title">HTML</h3>
+          <p class="card-description">Experience with HTML5</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">CSS</h3>
+          <p class="card-description">Experience with CSS3</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">JavaScript</h3>
+          <p class="card-description">Experience with JavaScript</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Web Design</h3>
+          <p class="card-description">Experience with Web Design</p>
+        </div>
+      </div>
+    </section>
+    <!-- My Projects Section -->
+    <section class="container section-container">
+      <h2 class="projects-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-card-title">Project 1</h3>
+          <p class="project-card-description">
+            A description of your first project
+          </p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-card-title">Project 2</h3>
+          <p class="project-card-description">
+            A description of your second project
+          </p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-card-title">Project 3</h3>
+          <p class="project-card-description">
+            A description of your third project
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer-container">
+      <p class="footer-text">© [Your Name]</p>
     </footer>
-    <!-- JavaScript section js/script.js -->
-    <script src="js/script.js"></script>
   </body>
 </html>
