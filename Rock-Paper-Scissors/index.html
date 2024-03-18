@@ -12,7 +12,7 @@
     </header>
     <div class="score-board">
       <div id="user-label" class="badge">user</div>
-      <div id="computer-label" class="badge">com</div>
+      <div id="computer-label" class="badge">comp</div>
       <!-- Spans are inline elements div are block level elements -->
       <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
@@ -20,9 +20,16 @@
       <p>Paper covers rock. You Win!!</p>
     </div>
     <div class="choices">
-      <div class="choice">
-        <img src="" alt="" />
+      <div class="choice" id="r">
+        <img src="assets/rock.png" alt="Rock Image" />
+      </div>
+      <div class="choice" id="p">
+        <img src="assets/paper.png" alt="Paper Image" />
+      </div>
+      <div class="choice" id="s">
+        <img src="assets/scissors.png" alt="Scissors Image" />
       </div>
     </div>
+    <p id="action-message">Make Your Move</p>
   </body>
 </html>
