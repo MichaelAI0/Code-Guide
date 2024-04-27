@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- The character encoding for the document -->
     <meta charset="utf-8" />
+    <!-- The title of the web page -->
     <title>Simon</title>
+    <!-- Linking an external CSS file -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Linking an external font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <!-- Including a JavaScript file and deferring its execution -->
     <script src="./game.js" defer></script>
   </head>
   <body>
+    <!-- Heading for the level title -->
     <h1 id="level-title">Press A Key to Start</h1>
+    <!-- Container for the game buttons -->
     <div class="container">
+      <!-- First row of buttons -->
       <div class="row">
+        <!-- Green button -->
         <div type="button" id="green" class="btn green"></div>
+        <!-- Red button -->
         <div type="button" id="red" class="btn red"></div>
       </div>
+      <!-- Second row of buttons -->
       <div class="row">
+        <!-- Yellow button -->
         <div type="button" id="yellow" class="btn yellow"></div>
+        <!-- Blue button -->
         <div type="button" id="blue" class="btn blue"></div>
       </div>
     </div>
+    <!-- Container for the timer -->
     <div id="timer-container">
+      <!-- Heading for the timer -->
       <h2>Time Left: <span id="timer"></span> seconds</h2>
     </div>
   </body>
