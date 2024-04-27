@@ -1,21 +1,25 @@
+/* Set the text alignment to center and the background color to a dark blue */
 body {
   text-align: center;
   background-color: #011f3f;
 }
 
+/* Style the level title with a custom font, font size, margin, and color */
 #level-title {
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin: 5%;
   color: #fef2bf;
 }
 
+/* Create a container element with a block display and set its width to 50% and center it horizontally */
 .container {
   display: block;
   width: 50%;
   margin: auto;
 }
 
+/* Style the buttons with margin, display, height, width, border, and border-radius */
 .btn {
   margin: 25px;
   display: inline-block;
@@ -25,27 +29,33 @@ body {
   border-radius: 20%;
 }
 
+/* Style the game over element with a red background color and opacity */
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
 
+/* Style the red button with a red background color */
 .red {
   background-color: red;
 }
 
+/* Style the green button with a green background color */
 .green {
   background-color: green;
 }
 
+/* Style the blue button with a blue background color */
 .blue {
   background-color: blue;
 }
 
+/* Style the yellow button with a yellow background color */
 .yellow {
   background-color: yellow;
 }
 
+/* Style the pressed button with a box shadow and grey background color */
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
