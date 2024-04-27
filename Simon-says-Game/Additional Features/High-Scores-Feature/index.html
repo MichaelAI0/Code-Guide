@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Set the character encoding for the document -->
     <meta charset="utf-8" />
+    <!-- Set the title of the webpage -->
     <title>Simon Says</title>
+    <!-- Link the external CSS file -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link the Google Fonts stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <!-- Include the game.js file and defer its execution until the document has finished parsing -->
     <script src="./game.js" defer></script>
   </head>
   <body>
+    <!-- Display the level title -->
     <h1 id="level-title">Press A Key to Start</h1>
+    <!-- Create a container for the game buttons -->
     <div class="container">
+      <!-- Create a row for the green and red buttons -->
       <div class="row">
+        <!-- Create a green button -->
         <div type="button" id="green" class="btn green"></div>
+        <!-- Create a red button -->
         <div type="button" id="red" class="btn red"></div>
       </div>
+      <!-- Create a row for the yellow and blue buttons -->
       <div class="row">
+        <!-- Create a yellow button -->
         <div type="button" id="yellow" class="btn yellow"></div>
+        <!-- Create a blue button -->
         <div type="button" id="blue" class="btn blue"></div>
       </div>
     </div>
     <!-- High Scores Section -->
     <div id="high-score-list">
+      <!-- Display the heading for the high scores section -->
       <h2>High Scores</h2>
+      <!-- Create an ordered list for the high scores -->
       <ol id="high-scores"></ol>
     </div>
   </body>
