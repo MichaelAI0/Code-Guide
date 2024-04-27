@@ -109,8 +109,11 @@ function nextSequence() {
   for (let i = 0; i < gamePattern.length; i++) {
     setTimeout(function () {
       // Fade out and fade in the button
-      document.getElementById(gamePattern[i]).style.fadeOut = 100;
-      document.getElementById(gamePattern[i]).style.fadeIn = 100;
+      var button = document.getElementById(gamePattern[i]);
+      button.style.opacity = 0;
+      setTimeout(function () {
+        button.style.opacity = 1;
+      }, 100);
     }, 500 * i);
   }
 

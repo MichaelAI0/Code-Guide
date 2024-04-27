@@ -91,7 +91,10 @@ function checkAnswer(currentLevel) {
 function nextSequence() {
   // Increase the amount of time it takes for the timer to start as the levels increase
   let newInterval = 50;
-  newInterval += level * 35;
+  // increases the interval as the level increases
+  newInterval += level * 40;
+  // display the new interval in the console
+  console.log(`New Interval`, newInterval);
   // Reset the user's clicked pattern
   userClickedPattern = [];
   // Increment the level

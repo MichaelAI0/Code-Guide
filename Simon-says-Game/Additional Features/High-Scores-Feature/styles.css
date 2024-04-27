@@ -1,66 +1,101 @@
+/* Set the text alignment to center and the background color to a dark blue */
 body {
   text-align: center;
   background-color: #011f3f;
 }
 
+/* Style for the level title */
 #level-title {
-  font-family: "Press Start 2P", cursive;
+  /* Use the "Press Start 2P" font and set the font size to 3rem */
+  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
+  /* Add a margin of 5% around the element and set the text color to a light yellow */
   margin: 5%;
   color: #fef2bf;
 }
 
+/* Style for the container element */
 .container {
+  /* Display the element as a block and set its width to 50% of the parent container */
   display: block;
   width: 50%;
+  /* Center the element horizontally using auto margins */
   margin: auto;
 }
 
+/* Style for the buttons */
 .btn {
+  /* Add a margin of 25px around the buttons */
   margin: 25px;
+  /* Display the buttons as inline-block elements */
   display: inline-block;
+  /* Set the height and width of the buttons to 150px */
   height: 150px;
   width: 150px;
+  /* Add a black border with a thickness of 10px and a border radius of 20% */
   border: 10px solid black;
   border-radius: 20%;
 }
 
+/* Style for the game over screen */
 .game-over {
+  /* Set the background color to red with an opacity of 0.8 */
   background-color: red;
   opacity: 0.8;
 }
 
+/* Style for the red button */
 .red {
+  /* Set the background color to red */
   background-color: red;
 }
+
+/* Style for the green button */
 .green {
+  /* Set the background color to green */
   background-color: green;
 }
+
+/* Style for the blue button */
 .blue {
+  /* Set the background color to blue */
   background-color: blue;
 }
+
+/* Style for the yellow button */
 .yellow {
+  /* Set the background color to yellow */
   background-color: yellow;
 }
 
+/* Style for the pressed button */
 .pressed {
+  /* Add a white box shadow and set the background color to grey */
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
 
 /* High Scores Styles */
+
+/* Style for the high score list */
 #high-score-list {
+  /* Add a top margin of 20px and set the text color to white */
   margin-top: 20px;
   color: white;
+  /* Set the text alignment to center */
   text-align: center;
 }
 
+/* Style for the high scores list */
 #high-scores {
+  /* Remove the default list style and padding */
   list-style-type: none;
   padding: 0;
 }
 
+/* Style for each high score item */
 #high-scores li {
+  /* Add a bottom margin of 5px and set the font size to 1.2em */
   margin-bottom: 5px;
   font-size: 1.2em;
 }

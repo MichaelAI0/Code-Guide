@@ -1,62 +1,62 @@
 /* Set the text alignment to center and the background color to a dark blue */
 body {
-  text-align: center;
-  background-color: #011f3f;
+  text-align: center; /* Aligns the text in the center of the body */
+  background-color: #011f3f; /* Sets the background color to a dark blue */
 }
 
 /* Style the level title with a custom font, font size, margin, and color */
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin: 5%;
-  color: #fef2bf;
+  font-family: 'Press Start 2P', cursive; /* Sets the font family to 'Press Start 2P' */
+  font-size: 3rem; /* Sets the font size to 3rem */
+  margin: 5%; /* Sets the margin around the level title */
+  color: #fef2bf; /* Sets the color of the level title to a light yellow */
 }
 
 /* Create a container element with a block display and set its width to 50% and center it horizontally */
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
+  display: block; /* Sets the display property to block */
+  width: 50%; /* Sets the width of the container to 50% of its parent element */
+  margin: auto; /* Centers the container horizontally */
 }
 
 /* Style the buttons with margin, display, height, width, border, and border-radius */
 .btn {
-  margin: 25px;
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  border: 10px solid black;
-  border-radius: 20%;
+  margin: 25px; /* Sets the margin around the buttons */
+  display: inline-block; /* Sets the display property to inline-block */
+  height: 150px; /* Sets the height of the buttons to 150px */
+  width: 150px; /* Sets the width of the buttons to 150px */
+  border: 10px solid black; /* Sets the border of the buttons to a 10px solid black line */
+  border-radius: 20%; /* Sets the border radius of the buttons to 20% */
 }
 
 /* Style the game over element with a red background color and opacity */
 .game-over {
-  background-color: red;
-  opacity: 0.8;
+  background-color: red; /* Sets the background color of the game over element to red */
+  opacity: 0.8; /* Sets the opacity of the game over element to 0.8 */
 }
 
 /* Style the red button with a red background color */
 .red {
-  background-color: red;
+  background-color: red; /* Sets the background color of the red button to red */
 }
 
 /* Style the green button with a green background color */
 .green {
-  background-color: green;
+  background-color: green; /* Sets the background color of the green button to green */
 }
 
 /* Style the blue button with a blue background color */
 .blue {
-  background-color: blue;
+  background-color: blue; /* Sets the background color of the blue button to blue */
 }
 
 /* Style the yellow button with a yellow background color */
 .yellow {
-  background-color: yellow;
+  background-color: yellow; /* Sets the background color of the yellow button to yellow */
 }
 
 /* Style the pressed button with a box shadow and grey background color */
 .pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+  box-shadow: 0 0 20px white; /* Adds a box shadow to the pressed button */
+  background-color: grey; /* Sets the background color of the pressed button to grey */
 }

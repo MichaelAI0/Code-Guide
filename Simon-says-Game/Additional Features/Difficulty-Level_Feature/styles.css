@@ -1,52 +1,81 @@
+/* Set the text alignment to center and the background color to a dark blue */
 body {
   text-align: center;
   background-color: #011f3f;
 }
 
+/* Style for the level title */
 #level-title {
-  font-family: "Press Start 2P", cursive;
+  /* Use the "Press Start 2P" font and set the font size to 3rem */
+  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
+  /* Add a margin of 5% around the element */
   margin: 5%;
+  /* Set the text color to a light yellow */
   color: #fef2bf;
 }
 
+/* Style for the container */
 .container {
+  /* Display the container as a block element */
   display: block;
+  /* Set the width to 50% of its parent element */
   width: 50%;
+  /* Center the container horizontally using auto margins */
   margin: auto;
 }
 
+/* Style for the buttons */
 .btn {
+  /* Add a margin of 25px around the buttons */
   margin: 25px;
+  /* Display the buttons as inline-block elements */
   display: inline-block;
+  /* Set the height and width of the buttons to 150px */
   height: 150px;
   width: 150px;
+  /* Add a black border with a thickness of 10px */
   border: 10px solid black;
+  /* Set the border radius to 20% to create rounded corners */
   border-radius: 20%;
 }
 
+/* Style for the game over screen */
 .game-over {
+  /* Set the background color to red */
   background-color: red;
+  /* Set the opacity to 0.8 to make it slightly transparent */
   opacity: 0.8;
 }
 
+/* Style for the red button */
 .red {
+  /* Set the background color to red */
   background-color: red;
 }
 
+/* Style for the green button */
 .green {
+  /* Set the background color to green */
   background-color: green;
 }
 
+/* Style for the blue button */
 .blue {
+  /* Set the background color to blue */
   background-color: blue;
 }
 
+/* Style for the yellow button */
 .yellow {
+  /* Set the background color to yellow */
   background-color: yellow;
 }
 
+/* Style for the pressed button */
 .pressed {
+  /* Add a white box shadow to create a pressed effect */
   box-shadow: 0 0 20px white;
+  /* Set the background color to grey */
   background-color: grey;
 }
